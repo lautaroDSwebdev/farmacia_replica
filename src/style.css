@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li{
+    list-style: none;
+  }
+  .read_more{
+      border: solid 1px rgb(42, 40, 40) ;
+      border-radius: .5rem;
+      padding: 5px;
+      
+  }
+  .borde-desc-caras{
+      border-top: solid .5px rgba(7, 6, 6, 0.149) ;
+  }
+  .borde_nav{
+    border-bottom: solid .5px rgba(7, 6, 6, 0.149) ;
+  }
+  .ver-mas{
+      border: solid 1px rgb(0, 0, 0) ;
+  }
+  .options-darklight{
+    display: none;
+    
+    transition:  2s ;
+  }
+  .options-darklight.open{
+    
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 6rem;
+    right: 20rem;
+    z-index: 999;
+    opacity: 1 ;
+    transition:  2s ;
+    transition-property: opacity;
+    
+  }
+  
+  .ul-cath{
+    display: inline;
+    height: 3rem;
+  }
+  .ul-cath img, .ul-cath b{
+    cursor: pointer;
+  }
+  .options-cathegory{
+    display: none;
+  }
+  .options-cathegoryy{
+    
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 6rem;
+    right: 20rem;
+    z-index: 999;
+    opacity: 1 ;
+    transition:  2s ;
+    transition-property: opacity;
+    
+  }
+  body{
+      overflow-x: hidden;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .center-hamburguer{
+    /* padding: 21px 0; */
+  }
+  .padding-nav-op{
+    height: 3rem;
+    
+    
+  }
+  
+  
+  /* CARRUSEL */
+  
+  
+  
+ 
+  .slidess{
+      overflow-x: hidden;
+     display: flex;
+     flex-direction: row;
+     width: 400%;
+     transition: transform 1s ease-in-out;
+     animation:12s ease-in-out carusel-animation  1s;
+     
+  }
+  @keyframes carusel-animation {
+    0%{
+  
+      transform: translateX(0%);
+    }
+   
+    25%{
+      transform: translateX(-25%); 
+      
+    }
+    50%{
+      transform: translateX(-50%);
+      
+    }
+    75%{
+      transform: translateX(-75%);
+      
+    }  
+    
+  }
+  #slide1:checked ~ .slidess {
+    transform: translateX(0%);
+  }
+  #slide2:checked ~ .slidess {
+    transform: translateX(-25%); 
+  }
+  #slide3:checked ~ .slidess {
+    transform: translateX(-50%);
+  }
+  #slide4:checked ~ .slidess {
+    transform: translateX(-75%);
+  }
+  
+  
+  .position-rel{
+    position: relative;
+  }
+  
+  
+  .carrusel input{
+    display: none;
+  }
+   label{
+    display: inline-block;
+    border: solid 2px black;
+    margin:  1rem;
+    height: 1rem;
+    width:  1rem;
+    
+  }
+  
+  
+  #slide1:checked ~.aside-navegacion #punto1,
+  #slide2:checked ~.aside-navegacion #punto2,
+  #slide3:checked ~.aside-navegacion #punto3,
+  #slide4:checked ~.aside-navegacion #punto4{
+    background-color: rgb(22, 18, 18);
+  }
+  
+  .style_prods_noStock{
+      background: #cd4848;
+      color: #fff;
+      transition: all .3s ease-out;
+    
+  }
+  .add_to_cart{
+    &:hover{
+      cursor: pointer;
+      background: #2b7da9;
+      color: #fff;
+      transition: all .3s ease-out;
+    }
+    &:not(:hover){
+      transition: all .3s ease-out;
+    }
+  }
+  
+  .style_prods_Stock{
+    background: #2b7da9;
+    color: #fff;
+  }
+  .slick-next::before,
+  .slick-prev::before {
+    color: #2b7da9 !important;
+    font-size: 2rem;
+    z-index: 800;
+    position: relative;
+  }
+  

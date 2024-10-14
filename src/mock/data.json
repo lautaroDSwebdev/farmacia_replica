@@ -1,0 +1,321 @@
+{
+    "entireHome":{
+        "navtitle": "¡Usted está comprando en Mas Farmacia !",
+        "logoPagina": "../../public/assets/logo.png",
+        "nav_options": [
+            {
+                "id": 1,
+                "title": "Dermocosmetica",
+                "url": "/Dermocosmetica"
+            },
+            {
+                "id": 2,
+                "title": "Maquillaje",
+                "url": "/Maquillaje"
+            },
+            {
+                "id": 3,
+                "title": "Cuidado de Piel",
+                "url": "/Cuidado de Piel"
+            },
+            {
+                "id": 4,
+                "title": "Perfumerias y fragancias",
+                "url": "/Perfumerias y fragancias"
+            },
+            {
+                "id": 5,
+                "title": "SUPEROFERTAS",
+                "url": "/SUPEROFERTAS"
+            }
+        ],
+        "CarruselBannerImagenes":[
+            {
+                "id": 1,
+                "img": "../assets/back-image.jpg",
+                "alt": "imagen1"
+            },
+            {
+                "id": 2,
+                "img": "../assets/back-image2.jpg",
+                "alt": "imagen2"
+            },
+            {
+                "id": 3,
+                "img": "../assets/back-image3.jpg",
+                "alt": "imagen3"
+            },
+            {
+                "id": 4,
+                "img": "../assets/back-image4.jpg",
+                "alt": "imagen4"
+            }
+        ],
+        "CarruselMarcas":[
+            {
+                "id": 1,
+                "img": "../../public/assets/Avene-logo.svg",
+                "url": ""
+            },
+            {
+                "id": 2,
+                "img": "../../public/assets/Bioderma-logo.svg",
+                "url": ""
+            },
+            {
+                "id": 3,
+                "img": "../../public/assets/Isdin-Logo5-pmoh897tr9nkdmw9mxvhig805du6oup7lc99erq4ac.png",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "img": "../../public/assets/Vichy-logo.svg",
+                "url": ""
+            },
+            {
+                "id": 5,
+                "img": "../../public/assets/La-Roche-Posay-logo.svg",
+                "url": ""
+            }
+        ],
+        "CarruselDescuentos": [
+            {
+                "id": 1,
+                "descuento": "2X1"
+            },
+            {
+                "id": 2,
+                "descuento": "80% en 2da"
+            },
+            {
+                "id": 3,
+                "descuento": "70% en 2da"
+            },
+            {
+                "id": 4,
+                "descuento": "40% off"
+            },
+            {
+                "id": 5,
+                "descuento": "35% off"
+            },
+            {
+                "id": 6,
+                "descuento": "50% en 2da"
+            }
+        ],
+        "CarruselProd2": [
+            {
+                "id": 1,
+                "img": "https://www.masfarmacias.com/wp-content/uploads/3337875597210-1-768x768.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 2,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 2,
+                "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097124-1-768x768.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 2,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 3,
+                "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097148-1-768x768.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 0,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 4,
+                "img": "https://www.masfarmacias.com/wp-content/uploads/7791293051024-1-768x768.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 0,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 5,
+                "img": "https://www.masfarmacias.com/wp-content/uploads/7791293050881-1-768x768.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 0,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            }
+        ],
+        "CarruselProd1": [
+            {
+                "id": 1,
+                "img": "../../public/assets/paquete.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 2,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 2,
+                "img": "../../public/assets/paquete2.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 2,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 3,
+                "img": "../../public/assets/paquete3.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 0,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 4,
+                "img": "../../public/assets/paquete4.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 0,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            },
+            {
+                "id": 5,
+                "img": "../../public/assets/paquete5.jpg",
+                "title": "CAPILATIS",
+                "price": "$2581,00",
+                "stock": 0,
+                "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
+                "add_kart": "Añadir al carrito"
+            }
+        ],
+        "CarruselBBcreams": [
+            {
+                "id": 1,
+                "img": "../../public/assets/cara1.jpg",
+                "title": "¿Que es la BB cream?",
+                "read_more": "Leer mas +",
+                "date": "mayo 27, 2022"
+            },
+            {
+                "id": 2,
+                "img": "../../public/assets/cara2.jpg",
+                "title": "¿Que es la BB cream?",
+                "read_more": "Leer mas +",
+                "date": "mayo 27, 2022"
+            },
+            {
+                "id": 3,
+                "img": "../../public/assets/cara3.jpg",
+                "title": "¿Que es la BB cream?",
+                "read_more": "Leer mas +",
+                "date": "mayo 27, 2022"
+            },
+            {
+                "id": 4,
+                "img": "../../public/assets/cara4.jpg",
+                "title": "¿Que es la BB cream?",
+                "read_more": "Leer mas +",
+                "date": "mayo 27, 2022"
+            }
+        ],
+        "fotterColumns": {
+            "firstColumn": [
+                {
+                    "id": 1,
+                    "title": "Mas farmacias"
+                },
+                {
+                    "id": 2,
+                    "title": "Quienes somos"
+                },
+                {
+                    "id": 3,
+                    "title": "Contacto"
+                },
+                {
+                    "id": 4,
+                    "title": "Novedades"
+                }
+            ],
+            "secondColumn": [
+                {
+                    "id": 1,
+                    "title": "Categorias"
+                },
+                {
+                    "id": 2,
+                    "title": "Dermocosmetica"
+                },
+                {
+                    "id": 3,
+                    "title": "Cuidado de la piel"
+                },
+                {
+                    "id": 4,
+                    "title": "Cuidado de piel de bebe"
+                },
+                {
+                    "id": 5,
+                    "title": "Cuidado personal"
+                },
+                {
+                    "id": 6,
+                    "title": "Cuidado oral"
+                }
+                
+            ],
+            "thirdColumn": [
+                {
+                    "id": 1,
+                    "title": "Cuidados de cabello"
+                },
+                {
+                    "id": 2,
+                    "title": "Perfumes y fragancias"
+                },
+                {
+                    "id": 3,
+                    "title": "Maquillaje"
+                },
+                {
+                    "id": 4,
+                    "title": "Cuidados de salud"
+                }
+            ],
+            "fourthColumn": [
+                {
+                    "id": 1,
+                    "title": "Ayuda"
+                },
+                {
+                    "id": 2,
+                    "title": "Terminos y considiciones"
+                },
+                {
+                    "id": 3,
+                    "title": "Informacion de envio"
+                },
+                {
+                    "id": 4,
+                    "title": "¿Como comprar?"
+                },
+                {
+                    "id": 5,
+                    "title": "Formas de pago"
+                }
+            ]
+        }         
+        
+
+    }
+}
