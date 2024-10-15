@@ -8,9 +8,30 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import DakLight from './components/SectionsHome/nav/DakLight';
 import Nav from './components/SectionsHome/nav/Nav';
+import { useSelector } from 'react-redux';
+import {  useState } from 'react';
+import ViewProducts from './components/SectionsHome/products1/ShowSelectedProd';
 const imagenLogo = data.entireHome.logoPagina
 
+
+
+
 function App() {
+
+    interface ProductDetails {
+        id: number;
+        img: string;
+        title: string;
+        price: string; // "$2581,00" como string debido al símbolo
+        stock: number;
+        description: string;
+        add_kart: string; // Añadir al carrito
+    }
+        const [estado, setEstado ] = useState(false)
+
+    const first = ( ) => { 
+        setEstado(!estado)
+     }
 
     const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
         '& .MuiBadge-badge': {
@@ -19,7 +40,8 @@ function App() {
         border: `2px solid ${theme.palette.background.paper}`,
     },
     }));
-
+        const selectorRedux = useSelector(state => state.cart.cart)
+        console.log(selectorRedux)
   return (
     <>
         <header className="">
@@ -42,11 +64,18 @@ function App() {
                     <div className=" flex  gap-[3rem] items-center ">
                         <a className="cursor-pointer ">ingresar</a>
                         <a className="cursor-pointer ">registrarme</a>
-                        <IconButton aria-label="cart">
-                            <StyledBadge badgeContent={4} color="secondary">
+                        <ul className=' '>
+
+                        <IconButton onClick={first} aria-label="cart">
+                            <StyledBadge badgeContent={selectorRedux.length} color="secondary">
                                 <ShoppingCartIcon />
                             </StyledBadge>
                         </IconButton>
+                            {
+                                !estado && 
+                                <ViewProducts selectorRedux={selectorRedux} />
+                            }
+                        </ul>
                         <DakLight/> 
                     </div>
                     </nav>
