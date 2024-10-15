@@ -1,7 +1,7 @@
 import NewsComp from "../News/NewsComp"
 import CarruselComponent from "../bannerHeader/CarruselComponent"
 import DiscountPrice from "../brands_discount_percent/DiscountPrice"
-import Products1 from "../products1/Products"
+import Products1 from "../products1/ProductsFather"
 import Products2 from "../products2/Products2"
 
 const HomePage = () => {
