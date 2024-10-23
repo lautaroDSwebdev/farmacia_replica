@@ -6,47 +6,51 @@
             {
                 "id": 1,
                 "title": "Dermocosmetica",
-                "url": "/Dermocosmetica"
+                "url": "/Categoria de productos/Dermocosmetica"
             },
             {
                 "id": 2,
                 "title": "Maquillaje",
-                "url": "/Maquillaje"
+                "url": "/Categoria de productos/Maquillaje"
             },
             {
                 "id": 3,
                 "title": "Cuidado de Piel",
-                "url": "/Cuidado de Piel"
+                "url": "/Categoria de productos/Cuidado de Piel"
             },
             {
                 "id": 4,
                 "title": "Perfumerias y fragancias",
-                "url": "/Perfumerias y fragancias"
+                "url": "/Categoria de productos/Perfumerias y fragancias"
             },
             {
                 "id": 5,
                 "title": "SUPEROFERTAS",
-                "url": "/SUPEROFERTAS"
+                "url": "/Categoria de productos/SUPEROFERTAS"
             }
         ],
         "CarruselBannerImagenes":[
             {
                 "id": 1,
+                "link": "#",
                 "img": "../assets/back-image.jpg",
                 "alt": "imagen1"
             },
             {
                 "id": 2,
+                "link": "#",
                 "img": "../assets/back-image2.jpg",
                 "alt": "imagen2"
             },
             {
                 "id": 3,
+                "link": "#",
                 "img": "../assets/back-image3.jpg",
                 "alt": "imagen3"
             },
             {
                 "id": 4,
+                "link": "#",
                 "img": "../assets/back-image4.jpg",
                 "alt": "imagen4"
             }

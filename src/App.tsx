@@ -10,27 +10,17 @@ import DakLight from './components/SectionsHome/nav/DakLight';
 import Nav from './components/SectionsHome/nav/Nav';
 import { useSelector } from 'react-redux';
 import {  useState } from 'react';
-import ViewProducts from './components/SectionsHome/products1/ShowSelectedProd';
+import ShowSelectedProd from './components/SectionsHome/viewProducts/ShowSelectedProd';
 const imagenLogo = data.entireHome.logoPagina
-
 
 
 
 function App() {
 
-    interface ProductDetails {
-        id: number;
-        img: string;
-        title: string;
-        price: string; // "$2581,00" como string debido al símbolo
-        stock: number;
-        description: string;
-        add_kart: string; // Añadir al carrito
-    }
-        const [estado, setEstado ] = useState(false)
+        const [view_cart, setEstado ] = useState(false)
 
     const first = ( ) => { 
-        setEstado(!estado)
+        setEstado(!view_cart)
      }
 
     const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
@@ -72,8 +62,8 @@ function App() {
                             </StyledBadge>
                         </IconButton>
                             {
-                                !estado && 
-                                <ViewProducts selectorRedux={selectorRedux} />
+                                !view_cart && 
+                                <ShowSelectedProd selectorRedux={selectorRedux} />
                             }
                         </ul>
                         <DakLight/> 
@@ -84,6 +74,8 @@ function App() {
             </ul>
                 <Nav/>
         </header>
+
+
         <Outlet/>
     </>
   )

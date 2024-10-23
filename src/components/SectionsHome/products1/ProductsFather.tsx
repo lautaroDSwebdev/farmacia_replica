@@ -42,7 +42,7 @@ const Products = () => {
                                     )
                                 })
                             }
-                            </Slider>
+                    </Slider>
                             </ul>
                     </article>
         </div>

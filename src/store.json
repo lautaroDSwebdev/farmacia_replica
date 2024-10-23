@@ -3,6 +3,7 @@
         "prods1": [
             {
                 "id": "1",
+                "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/3337875597210-1-768x768.jpg",
                 "title": "CAPILATIS",
                 "price": "$2581,00",
@@ -12,6 +13,7 @@
             },
             {
                 "id": "2",
+                "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097124-1-768x768.jpg",
                 "title": "CAPILATIS",
                 "price": "$2581,00",
@@ -21,6 +23,7 @@
             },
             {
                 "id": "3",
+                "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097148-1-768x768.jpg",
                 "title": "CAPILATIS",
                 "price": "$2581,00",
@@ -30,6 +33,7 @@
             },
             {
                 "id": "4",
+                "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7791293051024-1-768x768.jpg",
                 "title": "CAPILATIS",
                 "price": "$2581,00",
@@ -39,6 +43,7 @@
             },
             {
                 "id": "5",
+                "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7791293050881-1-768x768.jpg",
                 "title": "CAPILATIS",
                 "price": "$2581,00",
