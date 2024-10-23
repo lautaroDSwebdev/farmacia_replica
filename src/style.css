@@ -5,6 +5,11 @@
 li{
     list-style: none;
   }
+
+  html{
+    scrollbar-width: thin;
+    
+  }
   .read_more{
       border: solid 1px rgb(42, 40, 40) ;
       border-radius: .5rem;

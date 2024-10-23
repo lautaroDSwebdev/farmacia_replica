@@ -2,6 +2,8 @@ import data from "../../../store.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useDispatch } from "react-redux";
+import { addCartRedux, delToCartRedux } from "../../../context/slice";
 
 
 const prods = data.store.prods1
@@ -13,6 +15,10 @@ const Products2 = () => {
         slidesToShow: 5,
         slidesToScroll: 1
       };
+
+      const dispatch = useDispatch()
+      addCartRedux
+      delToCartRedux
     return (
         <div>
             <article className="w-full">
@@ -48,7 +54,10 @@ const Products2 = () => {
                                         <div className=" inline-flex ">
                                             <b className="pl-4">{e.price}</b>
                                         </div>
-                                        <div className=" flex justify-center m-[1rem]">
+                                        <div onClick={()=> 
+                                            dispatch(addCartRedux({ title: e.title, img: e.img, prive: e.price,id:e.id, desc: e.description}))
+                                        }
+                                            className=" flex justify-center m-[1rem]">
                                             <button className={`p-[.4rem] bg-[#F5F5F5] w-full rounded-[3rem] 
                                             ${e.stock  > 0 ? "add_to_cart" 
                                             : " cursor-auto"}`}>{e.add_kart}</button>
