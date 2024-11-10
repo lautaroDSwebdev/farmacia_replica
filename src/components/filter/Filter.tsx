@@ -1,6 +1,4 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
-
 const Filter = () => {
   const filterData = [
     {
@@ -25,28 +23,25 @@ const Filter = () => {
   ];
 
   return (
-    <div className="bg-[#F9F9F9]  w-full  mx-auto h-[10vh] pb-4  ">
-      <ul className="flex flex-col justify-center h-[10vh]">
-        <form
-          className=" flex justify-end content-center mx-auto max-w-maximo-ancho w-full  "
-          method="post"
-          action="/send/"
-        >
-          <select className="p-2 rounded-md cursor-pointer focus:outline-none">
-            {filterData.map((e) => (
-              <option value={e.valor}>{e.op}</option>
-            ))}
-          </select>
-        </form>
-      </ul>
-      <aside className="fixed  h-full w-[15%] bg-[#F9F9F9]">
-                <p> hola 1</p>
-                <p> hola 2</p>
-                <p> hola 3</p>
-                <p> hola 4</p>
-      </aside>
-      <Outlet />
-    </div>
+    <section className="bg-[#F9F9F9]">
+      <div className="  w-full  mx-auto h-[10vh] pb-4 max-w-maximo-ancho  ">
+        <ul className="flex flex-col justify-center h-[10vh]">
+          <form
+            className=" flex justify-end content-center mx-auto max-w-maximo-ancho w-full  "
+            method="post"
+            action="/send/"
+          >
+            <select className="p-2 rounded-md cursor-pointer focus:outline-none">
+              {filterData.map((e) => (
+                <option value={e.valor}>{e.op}</option>
+              ))}
+            </select>
+          </form>
+        </ul>
+
+        <Outlet />
+      </div>
+    </section>
   );
 };
 

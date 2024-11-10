@@ -1,4 +1,30 @@
 
+Documentacion proyecto
 
-![image](https://github.com/user-attachments/assets/8d7d69d9-c4d9-4cd8-bb6d-6e4b2e148c36)
+flujo de carpetas
+src/
+    assets/
+    components/
+               ciudadodepiel/
+               dermocosmetica/
+               filter/(la logica del filtro de productos)
+               maquillaje/
+               permunesYfragancias
+               sectionhome/
+                          bannerheader/(logica del carrusel)
+                          brandsdiscountpercent/
+                          header/
+                          homepage/
+                          nav/
+                          news/
+                          products1/(componente y logica del carrusel 1 productos)
+                                  /Prods.tsx
+                                  /ProductsFather.tsx
+                          products2/(componente y logica del carrusel 2 productos)
+                          viewProducts/(componente y logica de el carrito)
+    mock/(json con toda la aplicacion)
+    context/(la logica de negocio con el estado global)
+    router/
+    types/
+
 

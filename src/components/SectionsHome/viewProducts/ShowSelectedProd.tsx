@@ -7,7 +7,6 @@ const ShowSelectedProd = ({
 }: {
   selectorRedux: ProductDetails[];
 }) => {
-
   console.log(selectorRedux);
 
   const dispatch = useDispatch();
