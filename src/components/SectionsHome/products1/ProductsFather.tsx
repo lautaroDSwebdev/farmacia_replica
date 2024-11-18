@@ -20,13 +20,13 @@ const Products = () => {
         <div>
             <article className="w-full">
                 <div className="max-w-maximo-ancho mx-auto mt-[3rem] mb-[1rem] flex justify-between ">
-                    <b className="  text-[#F75A3C] text-[2rem]">Productos Destacados</b>
-                    <button className="read_more ">Ver mas +</button>
+                    <b className="  text-[#F75A3C] text-[2rem] dark:text-white">Productos Destacados</b>
+                    <button className="read_more dark:bg-dark_theme_details enlace-header ">Ver mas +</button>
                 </div>
                 {/* <section className=" grid grid-cols-4 gap-[2rem] max-w-maximo-ancho mx-auto ">
                     </section> */}
                     <ul className="max-w-[1200px] mx-auto ">
-                    <Slider {...settingsbrands} >
+                    <Slider {...settingsbrands}  >
                             {
                                 prods.map((e) => {
                                     return (

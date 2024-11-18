@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  "darkMode": "class",
   theme: {
     extend: {
       fontFamily:{
@@ -18,6 +19,14 @@ export default {
       },
       height:{
         "mini-icons-height":"3rem",
+      },
+      backgroundColor: {
+        "dark-theme": "#CB6767",
+        "dark_theme_details": "#BA4747",
+        "dark_placeholderYborder": "#BDBDBD"
+      },
+      color: {
+        "textdarktheme": "#fff"
       }
     },
   },

@@ -7,7 +7,7 @@ const DiscountPrice = () => {
     return (
 
             <article className="pt-[3rem] w-full my-3 flex flex-wrap
-                justify-center gap-4 max-w-maximo-ancho mx-auto">
+                justify-center gap-4 max-w-maximo-ancho mx-auto dark:bg-dark-theme">
                 {
                     discount.map(e => {
                         return (

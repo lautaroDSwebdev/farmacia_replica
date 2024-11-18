@@ -1,31 +1,23 @@
 import { useDispatch } from "react-redux";
-import { addCartRedux } from "../../../context/slice";
+import { addCartRedux } from "../../../store/slice";
+import "./Prods.css";
+import { TypesCart } from "../../../types/types";
 
-const Prods = ({ id, stock, title, img, addkart, desc, price }) => {
+const Prods = ({ id, stock, title, img, addkart, desc, price }: TypesCart) => {
   const dispatch = useDispatch();
   return (
-    <div
-      key={id}
-      className=" flex mx-auto   flex-col  justify-center  border border-[#eeeded] rounded-md"
-    >
-      <div className="flex justify-center overflow-hidden">
-        <img
-          className="h-[11rem] w-[14rem] cursor-pointer opacity-60 hover:rotate-2
-        hover:opacity-100 hover:scale-125  transition-all duration-500 ease-out"
-          src={img}
-        />
+    <div key={id} className="div_prodCart dark:bg-dark_theme_details">
+      <div className="div_imgProd ">
+        <img className="" src={img} />
       </div>
       <div className="mx-3 p-3 h-auto">
-        <ul className="flex gap-4">
+        <ul className="ul_p ">
           <p
-            className={`px-2 py-1 inline-flex rounded-[3rem] text-sm bg-[#F5F5F5] cursor-pointer 
-                ${stock > 0 ? "style_prods_Stock" : "style_prods_noStock"}`}
+            className={`ul_p-styles ${stock > 0 ? "style_prods_Stock" : "style_prods_noStock"}`}
           >
             {stock === 0 ? "Agotado" : "En stock"}
           </p>
-          <p className="px-2 py-1 inline-flex rounded-[3rem] text-sm bg-[#F5F5F5] cursor-pointer">
-            {title}
-          </p>
+          <p className="ul_p-title">{title}</p>
         </ul>
         <p className="p-1">{desc}</p>
       </div>

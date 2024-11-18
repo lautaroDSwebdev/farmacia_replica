@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useDispatch } from "react-redux";
-import { addCartRedux, delToCartRedux } from "../../../context/slice";
+import { addCartRedux, delToCartRedux } from "../../../store/slice";
 
 
 const prods = data.store.prods1
@@ -23,8 +23,8 @@ const Products2 = () => {
         <div>
             <article className="w-full">
                 <div className="max-w-maximo-ancho mx-auto mt-[3rem] mb-[1rem] flex justify-between ">
-                    <b className=" text-[#F75A3C] text-[2rem]">Mas Vendidos</b>
-                    <button className="read_more ">Ver mas +</button>
+                    <b className=" text-[#F75A3C] text-[2rem] dark:text-white">Mas Vendidos</b>
+                    <button className="read_more dark:bg-dark_theme_details">Ver mas +</button>
                 </div>
 
                     <ul className="max-w-maximo-ancho mx-auto ">
@@ -34,7 +34,7 @@ const Products2 = () => {
                             {
                                 prods.map((e) => {
                                     return (
-                                    <div key={e.id} className=" flex mx-auto   flex-col  justify-center  border border-[#eeeded] rounded-md">
+                                    <div key={e.id} className="dark:bg-dark_theme_details flex mx-auto   flex-col  justify-center  border border-[#eeeded] rounded-md">
                                         <div className="flex justify-center overflow-hidden">
                                             <img className="h-[11rem] w-[14rem] cursor-pointer opacity-60 hover:rotate-2
                                             hover:opacity-100 hover:scale-125  transition-all duration-500 ease-out" src={e.img}/>

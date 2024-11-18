@@ -9,8 +9,8 @@ const NewsComp = () => {
     <>
     <article className="w-full">
             <div className=" flex justify-between max-w-maximo-ancho mt-[3rem] mb-[1rem] mx-auto">
-                <b className=" ml-24 text-[#F75A3C] text-[2rem] ">Novedades</b>
-                <button className="enlace-header text-[#000000] ver-mas  py-[1rem] px-[2rem]">Ver mas +</button>
+                <b className=" ml-24 text-[#F75A3C] text-[2rem] dark:text-white ">Novedades</b>
+                <button className=" text-[#000000] dark:bg-dark_theme_details read_more  py-[1rem] px-[2rem]">Ver mas +</button>
             </div>
         </article>
 
@@ -18,7 +18,7 @@ const NewsComp = () => {
             {
                 news.map((e) => {
                     return (
-                        <article className=" flex mx-auto  flex-col  justify-center  border border-[#e2e1e1] rounded-md " key={e.id}>
+                        <article className="dark:bg-dark_theme_details flex mx-auto  flex-col  justify-center  border border-[#e2e1e1] rounded-md " key={e.id}>
                             <Link to={``}>
                                 <div className="flex justify-center " 
                                     style={{backgroundImage: `url(${e.img})`,

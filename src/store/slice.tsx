@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import data from "../store.json";
 
 const slice = createSlice({
   name: "cart",
@@ -13,6 +12,9 @@ const slice = createSlice({
     delToCartRedux: (state, action) => {
       state.cart = state.cart.filter((e) => e.id !== action.payload.id);
     },
+    // sumarTotal: (state) => {
+    //   state.cart.reduce((total, product) => total + product.price, 0);
+    // }
   },
 });
 export default slice;

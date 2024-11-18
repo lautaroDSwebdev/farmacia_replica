@@ -2,23 +2,25 @@ import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import HomePage from "../components/SectionsHome/homepage/HomePage";
 import Filter from "../components/filter/Filter";
-// import App from '../App'
 
-// const CuidadoDePiel = lazy(() => import('../SectionsHome/nav/CuidadoDePiel'))
-// const Dermocosmetica = lazy(() => import('../SectionsHome/nav/Dermocosmetica'))
-// const Maquillaje = lazy(() => import('../SectionsHome/nav/Maquillaje'))
-// const PerfumeriasYFragancia = lazy(() => import('../SectionsHome/nav/PerfumeriasYFragancia'))
-// const Superofertas = lazy(() => import('../SectionsHome/nav/Superofertas'))
+
 const App = lazy(() => import("../App"));
 const Dermocosmetica = lazy(
   () => import("../components/dermocosmetica/Dermocosmetica")
 );
 
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense fallback={<div className="text-[3rem] flex justify-center">Cargando Home..</div>}>
+      <Suspense
+        fallback={
+          <div className="text-[3rem] flex justify-center">Cargando Home..</div>
+        }
+      >
         <App />
       </Suspense>
     ),
@@ -37,12 +39,11 @@ const router = createBrowserRouter([
               <Suspense
                 fallback={
                   <div className="text-[3rem] flex justify-center">
-                    {" "}
                     Carcando Categoria de productos
                   </div>
                 }
               >
-                <Dermocosmetica />
+                <Dermocosmetica  />
               </Suspense>
             ),
           },

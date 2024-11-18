@@ -1,35 +1,73 @@
 import { Asidefilter } from "../filter/Asidefilter";
 import data from "./dermocosmetica.json";
-import "./style.css";
+import "./democosmetica.css";
+import { useDispatch } from "react-redux";
+import { addCartRedux } from "../../store/slice";
+import {HelperFiltro} from "../filter/HelperFilter";
+interface ProductDetails {
+  id: number;
+  marca: string;
+  desc: string;
+  stock: number;
+  discountImg: string;
+  discountPrice: string;
+  img: string;
+  precio: number;
+}
 
-const prodsDermo = data.paginas[1];
 const Dermocosmetica = () => {
+  
+  const prodsDermo = data.paginas.first
+const {filterProducts} =  HelperFiltro()
+const prodsFilter: ProductDetails[] = filterProducts(prodsDermo)
+console.log(prodsFilter)
+
+
+  const dispatch = useDispatch();
   return (
-    <section className="flex " >
-      <Asidefilter/>
+    <section className="flex dark:bg-dark-theme">
+      <Asidefilter />
       <div className="p-[1rem] grid grid-cols-[repeat(auto-fill,minmax(10rem,1fr))] gap-6 mx-auto w-[77%] ">
-        {prodsDermo.map((e) => {
+        {prodsFilter.map((e) => {
           return (
-            <ul
-              className="flex flex-col justify-center hover:z-[100] p-3 bg-white
-                rounded-sm cursor-pointer hover:scale-110 transition-all
-                ease-in-out .3s shadow shadow-slate-400"
-              key={e.id}
-            >
-              <p className="text-center">{e.marca}</p>
+            <ul className="prods_style dark:bg-dark_theme_details " key={e.id}>
               <img className="h-auto w-[200px]" src={e.img} alt="" />
-              <p
-                className={`text-center ${!e.discountPrice ? "pb-[3rem]" : ""}`}
-              >
-                {e.precio}
+              <ul className="ul_marca_stock">
+                <p className=" dark:text-white text-[12px] flex items-center ">{e.marca}</p>
+                {
+                  
+                  e.stock > 1 ? (
+                    <p className="text-[#66d151]">stock</p>
+                  ) : (
+                    <p className="text-[#f5493a] dark:text-[#ffffff] ">no stock</p>
+                  )
+                }
+              </ul>
+              <p className="text-[12px]">{e.desc}</p>
+              <p className={`text-[15px] dark:text-white ${!e.discountPrice ? "pb-[3rem]" : ""}`}>
+                $ {e.precio}
               </p>
               {e.discountPrice || e.discountImg ? (
-                <p className="text-[#6cec52] text-center">
-                  Con descuento de{e.discountPrice}
+                <p className="text-[#66d151] font-semibold text-[12px] flex items-center max-w-[100px] mx-auto ">
+                  Con descuento de: $ {e.discountPrice}
                 </p>
               ) : (
                 ""
               )}
+              <button
+                onClick={() =>
+                  dispatch(
+                    addCartRedux({
+                      id: e.id,
+                      img: e.img,
+                      title: e.marca,
+                      price: e.precio,
+                    })
+                  )
+                }
+              >
+                agregar al carrito
+              </button>
             </ul>
           );
         })}

@@ -22,12 +22,8 @@
                 "id": 4,
                 "title": "Perfumerias y fragancias",
                 "url": "/Categoria de productos/Perfumerias y fragancias"
-            },
-            {
-                "id": 5,
-                "title": "SUPEROFERTAS",
-                "url": "/Categoria de productos/SUPEROFERTAS"
             }
+           
         ],
         "CarruselBannerImagenes":[
             {
@@ -113,7 +109,7 @@
                 "id": 1,
                 "img": "https://www.masfarmacias.com/wp-content/uploads/3337875597210-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -122,7 +118,7 @@
                 "id": 2,
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097124-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -131,7 +127,7 @@
                 "id": 3,
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097148-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -140,7 +136,7 @@
                 "id": 4,
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7791293051024-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -149,7 +145,7 @@
                 "id": 5,
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7791293050881-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -160,7 +156,7 @@
                 "id": 1,
                 "img": "../../public/assets/paquete.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -169,7 +165,7 @@
                 "id": 2,
                 "img": "../../public/assets/paquete2.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -178,7 +174,7 @@
                 "id": 3,
                 "img": "../../public/assets/paquete3.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -187,7 +183,7 @@
                 "id": 4,
                 "img": "../../public/assets/paquete4.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -196,7 +192,7 @@
                 "id": 5,
                 "img": "../../public/assets/paquete5.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
