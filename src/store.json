@@ -6,7 +6,7 @@
                 "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/3337875597210-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -16,7 +16,7 @@
                 "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097124-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -26,7 +26,7 @@
                 "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7891150097148-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -36,7 +36,7 @@
                 "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7791293051024-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -46,7 +46,7 @@
                 "link": "#",
                 "img": "https://www.masfarmacias.com/wp-content/uploads/7791293050881-1-768x768.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 3,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -57,7 +57,7 @@
                 "id": "1",
                 "img": "/assets/paquete.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -66,7 +66,7 @@
                 "id": "2",
                 "img": "/assets/paquete2.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 2,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -75,7 +75,7 @@
                 "id": "3",
                 "img": "/assets/paquete3.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -84,7 +84,7 @@
                 "id": "4",
                 "img": "/assets/paquete4.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 4,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"
@@ -93,7 +93,7 @@
                 "id": "5",
                 "img": "/assets/paquete5.jpg",
                 "title": "CAPILATIS",
-                "price": "$2581,00",
+                "price": 2581.00,
                 "stock": 0,
                 "description": "Capilatis Mascarilla Capilar Con Keratina Reconstruccion Intensa X170ml",
                 "add_kart": "Añadir al carrito"

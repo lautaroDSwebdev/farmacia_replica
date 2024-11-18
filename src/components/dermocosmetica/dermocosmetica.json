@@ -1,165 +1,165 @@
 {
   "paginas": {
-    "1": [
+    "first": [
       {
         "id": 1,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Aceite de Baño x500ml",
-        "stock": true,
+        "stock": 5,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/7799075000680-768x768.jpg",
-        "precio": "$36.279,07"
+        "precio": 36279.07
       },
       {
         "id": 2,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Balsamo Emoliente X200ml",
-        "stock": true,
+        "stock": 8,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/7798095419694-768x768.jpg",
-        "precio": "$46.955,03"
+        "precio": 46955.03
       },
       {
         "id": 3,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Crema Emoliente X200ml",
-        "stock": true,
+        "stock": 2,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/7798095419717-768x768.jpg",
-        "precio": "$37.206,64"
+        "precio": 37206.64
       },
       {
         "id": 4,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Gel 2en1 Cuerpo/Cabello x500ml",
-        "stock": true,
+        "stock": 0,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/7799075000697-768x768.jpg",
-        "precio": "$42.153,79"
+        "precio": 42153.79
       },
       {
         "id": 5,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Leche Emoliente X400ml",
-        "stock": true,
+        "stock": 3,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/7798095419670-768x768.jpg",
-        "precio": "$64.817,22"
+        "precio": 64817.22
       },
       {
         "id": 6,
         "marca": "La Roche-Posay",
         "desc": "Anthelios Age Correct 1031 Gel Crema Diario FPS50 x50ml",
-        "stock": true,
+        "stock": 9,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
         "discountPrice": "65.025,00",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875761031-1.jpg",
-        "precio": "$42.266,25"
+        "precio": 42266.25
       },
       {
         "id": 7,
         "marca": "La Roche-Posay",
         "desc": "Anthelios Age Correct 4353 Gel Crema Con Color FPS50 x50ml",
-        "stock": true,
+        "stock": 0,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": "65.025,00",
+        "discountPrice": 65.025,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875761031-1.jpg",
-        "precio": "$42.266,25"
+        "precio": 42266.25
       },
       {
         "id": 8,
         "marca": "La Roche-Posay",
         "desc": "Anthelios Dermo Pedia Lotion F50 X250ml",
-        "stock": true,
+        "stock": 3,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": "$64.860,00",
+        "discountPrice": 64.860,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875550628.jpg",
-        "precio": "$42.159,00"
+        "precio": 42159.00
       },
       {
         "id": 9,
         "marca": "La Roche-Posay",
         "desc": "Anthelios Mineral One Fps50+ Tono 02 30 Ml",
-        "stock": true,
+        "stock": 1,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875706674.jpg",
-        "precio": "$41.645,00"
+        "precio": 41645.00
       },
       {
         "id": 10,
         "marca": "Anthelios",
         "desc": "Anthelios Spray Invisible Ultra Protección F50 X200ml",
-        "stock": true,
+        "stock": 2,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797467-1.jpg",
-        "precio": "$65.025,00"
+        "precio": 65025.00
       },
       {
         "id": 11,
         "marca": "La Roche-Posay",
         "desc": "Anthelios Spray Invisible Ultra Protección F50 X200ml",
-        "stock": true,
+        "stock": 2,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": "$69.480,00",
+        "discountPrice": 69.480,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875696838.jpg",
-        "precio": "$45.162,00"
+        "precio": 45162.00
       },
       {
         "id": 12,
         "marca": "Anthelios",
         "desc": "Anthelios Uv Mune400 Color Fluid F50 x 50ml",
-        "stock": true,
+        "stock": 3,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": "$54.600,00.",
+        "discountPrice": 54.600,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797641-1.jpg",
-        "precio": "$35.490,00"
+        "precio": 35490.00
       },
       {
         "id": 13,
         "marca": "Anthelios",
         "desc": "Anthelios Uv Mune400 Crema Hidratante Con Color F50 x 50ml",
-        "stock": true,
-        "discountPrice": "$54.100,00.",
+        "stock": 4,
+        "discountPrice": 54.100,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797689-1.jpg",
-        "precio": "$35.165,00"
+        "precio": 35165.00
       },
       {
         "id": 14,
         "marca": "Anthelios",
         "desc": "Anthelios Uv Mune400 CreMA HidratANTE F50 x 50ml",
-        "stock": true,
+        "stock": 5,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": "$54.100,00.",
+        "discountPrice": 54.100,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797719-1.jpg",
-        "precio": "$35.165,00"
+        "precio": 35165.00
       },
       {
         "id": 15,
         "marca": "Anthelios",
         "desc": "Anthelios Uv Mune400 Invisible Fluid F50 x 50ml",
-        "stock": true,
+        "stock": 0,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": "$54.600,00.",
+        "discountPrice": 54.600,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797597-1.jpg",
-        "precio": "$35.490,00"
+        "precio": 35490.00
       },
       {
         "id": 16,
-        "marca": "",
+        "marca": "Anthelios",
         "desc": "Anthelios XL Bruma Ultra/L F50 X200ml",
-        "stock": true,
+        "stock": 1,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337872420153.jpg",
-        "precio": "$61.680,00"
+        "precio": 61680.00
       }
     ],
 

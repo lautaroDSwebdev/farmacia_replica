@@ -22,9 +22,12 @@ li{
   .borde_nav{
     border-bottom: solid .5px rgba(7, 6, 6, 0.149) ;
   }
-  .ver-mas{
-      border: solid 1px rgb(0, 0, 0) ;
-  }
+  .read_more{
+    border: solid 1px rgb(42, 40, 40) ;
+    border-radius: .5rem;
+    padding: 5px;
+    
+}
   .options-darklight{
     display: none;
     
@@ -164,33 +167,34 @@ li{
     background-color: rgb(22, 18, 18);
   }
   
-  .style_prods_noStock{
-      background: #cd4848;
-      color: #fff;
-      transition: all .3s ease-out;
-    
-  }
-  .add_to_cart{
-    &:hover{
-      cursor: pointer;
-      background: #2b7da9;
-      color: #fff;
-      transition: all .3s ease-out;
-    }
-    &:not(:hover){
-      transition: all .3s ease-out;
-    }
-  }
-  
-  .style_prods_Stock{
-    background: #2b7da9;
-    color: #fff;
-  }
+
   .slick-next::before,
   .slick-prev::before {
     color: #2b7da9 !important;
     font-size: 2rem;
     z-index: 800;
     position: relative;
+  }
+  
+  .style_prods_noStock {
+    background: #cd4848;
+    color: #fff;
+    transition: all 0.3s ease-out;
+  }
+  .add_to_cart {
+    &:hover {
+      cursor: pointer;
+      background: #2b7da9;
+      color: #fff;
+      transition: all 0.3s ease-out;
+    }
+    &:not(:hover) {
+      transition: all 0.3s ease-out;
+    }
+  }
+  
+  .style_prods_Stock {
+    background: #2b7da9;
+    color: #fff;
   }
   
