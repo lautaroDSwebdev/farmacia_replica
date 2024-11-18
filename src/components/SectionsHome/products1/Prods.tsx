@@ -6,7 +6,7 @@ import { TypesCart } from "../../../types/types";
 const Prods = ({ id, stock, title, img, addkart, desc, price }: TypesCart) => {
   const dispatch = useDispatch();
   return (
-    <div key={id} className="div_prodCart dark:bg-dark_theme_details">
+    <div key={id} className="div_prodCart dark:bg-dark-theme">
       <div className="div_imgProd ">
         <img className="" src={img} />
       </div>

@@ -34,7 +34,7 @@ const Products2 = () => {
                             {
                                 prods.map((e) => {
                                     return (
-                                    <div key={e.id} className="dark:bg-dark_theme_details flex mx-auto   flex-col  justify-center  border border-[#eeeded] rounded-md">
+                                    <div key={e.id} className="dark:bg-dark-theme flex mx-auto   flex-col  justify-center  border border-[#eeeded] rounded-md">
                                         <div className="flex justify-center overflow-hidden">
                                             <img className="h-[11rem] w-[14rem] cursor-pointer opacity-60 hover:rotate-2
                                             hover:opacity-100 hover:scale-125  transition-all duration-500 ease-out" src={e.img}/>

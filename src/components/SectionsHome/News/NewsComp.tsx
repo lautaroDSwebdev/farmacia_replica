@@ -18,7 +18,7 @@ const NewsComp = () => {
             {
                 news.map((e) => {
                     return (
-                        <article className="dark:bg-dark_theme_details flex mx-auto  flex-col  justify-center  border border-[#e2e1e1] rounded-md " key={e.id}>
+                        <article className="dark:bg-dark-theme flex mx-auto  flex-col  justify-center  border border-[#e2e1e1] rounded-md " key={e.id}>
                             <Link to={``}>
                                 <div className="flex justify-center " 
                                     style={{backgroundImage: `url(${e.img})`,
