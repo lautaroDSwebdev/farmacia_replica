@@ -30,7 +30,7 @@ console.log(prodsFilter)
       <div className="p-[1rem] grid grid-cols-[repeat(auto-fill,minmax(10rem,1fr))] gap-6 mx-auto w-[77%] ">
         {prodsFilter.map((e) => {
           return (
-            <ul className="prods_style dark:bg-dark_theme_details " key={e.id}>
+            <ul className="prods_style dark:bg-dark-theme " key={e.id}>
               <img className="h-auto w-[200px]" src={e.img} alt="" />
               <ul className="ul_marca_stock">
                 <p className=" dark:text-white text-[12px] flex items-center ">{e.marca}</p>

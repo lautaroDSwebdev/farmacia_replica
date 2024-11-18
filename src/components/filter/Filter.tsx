@@ -36,7 +36,7 @@ const Filter = () => {
   ];
 
   return (
-    <section className="bg-[#F9F9F9] dark:bg-dark_theme_details ">
+    <section className="bg-[#F9F9F9] dark:bg-dark-theme ">
       <div className="  w-full  mx-auto h-[10vh] pb-4 max-w-maximo-ancho  ">
         <ul className="flex flex-col justify-center  h-[10vh] max-w-maximo-ancho">
           <form

@@ -9,10 +9,10 @@ const Nav = () => {
     <div className="flex justify-between  max-w-[900px] mx-auto pt-[1rem] ">
         <ul  >
           <div className=" ul-cath">
-              <div className=" inline-flex flex-wrap content-center height-cath">
+              <div className="inline-flex flex-wrap content-center height-cath">
 
                   <img src="/frame botom hamburguesa.svg" alt=""/>
-                  <b  className=" text-red-500 dark:text-[#eb9797] ">Categorias</b>
+                  <b  className=" text-red-500 text-decoration  dark:text-white  ">Categorias</b>
               </div>
           </div>
         </ul>

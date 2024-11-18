@@ -1,4 +1,3 @@
-import { HiMagnifyingGlass } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import data from "../../mock/data.json";
 import { CartIcon } from "./CartIcon";
@@ -25,7 +24,6 @@ export const NavTop = () => {
             type="search "
             placeholder="Buscar.."
           />
-          <HiMagnifyingGlass className="absolute top-[20px] left-[1rem]  bg-[#e3dfdf]" />
         </div>
         <div className=" flex  gap-[3rem] items-center ">
           <a className="cursor-pointer ">ingresar</a>
