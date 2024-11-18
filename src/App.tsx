@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-      <header className="dark:bg-dark_theme_details ">
-        <div className="flex  justify-center bg-dark_theme_details ">
+      <header className="dark:bg-dark-theme  ">
+        <div className="flex  justify-center dark:bg-dark_theme_details bg-[#fa1a1a] ">
           <i className=" text-1xl text-[#ffffff] ">
             ¡Usted está comprando en Mas Farmacia !
           </i>

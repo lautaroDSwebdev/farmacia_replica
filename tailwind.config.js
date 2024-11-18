@@ -21,7 +21,7 @@ export default {
         "mini-icons-height":"3rem",
       },
       backgroundColor: {
-        "dark-theme": "#CB6767",
+        "dark-theme": "#C9A29A",
         "dark_theme_details": "#BA4747",
         "dark_placeholderYborder": "#BDBDBD"
       },

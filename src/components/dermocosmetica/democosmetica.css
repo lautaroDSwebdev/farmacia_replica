@@ -25,8 +25,7 @@
     transition-duration: 150ms;
     box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.44);
     &:hover{
-      background: #d4cece;
-      color:#fff ;
+      background: #e4dfdf;
     }
   }
   button:disabled{

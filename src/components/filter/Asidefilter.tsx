@@ -15,8 +15,8 @@ export const Asidefilter = () => {
 
   return (
     <aside className="     ">
-      <div className="w-full m-3 relative left-0   mx-auto  ">
-        <p>Precio a partir de {filters.minPrice}</p>
+      <div className="w-full m-3 relative left-0 dark:bg-dark-theme   mx-auto  ">
+        <p>Precio a partir de ${filters.minPrice}</p>
         <input className="cursor-pointer"
           type="range"
           name=""

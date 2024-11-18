@@ -52,7 +52,7 @@ const DarkLight = () => {
     // </label>
 
     <button onClick={handleChangeTheme}>
-      {theme === "dark" ? <LuSun className="text-3xl text-yellow-400   " /> : <FaMoon className="text-3xl text-sky-800 " />}
+      {theme === "dark" ? <LuSun className="text-3xl text-[#fbff2c]   " /> : <FaMoon className="text-3xl  " />}
     </button>
   );
 };
