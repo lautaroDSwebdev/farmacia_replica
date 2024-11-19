@@ -1,9 +1,9 @@
-import { Asidefilter } from "../filter/Asidefilter";
+import { Asidefilter } from "../../filter/Asidefilter";
 import data from "./dermocosmetica.json";
 import "./democosmetica.css";
 import { useDispatch } from "react-redux";
-import { addCartRedux } from "../../store/slice";
-import {HelperFiltro} from "../filter/HelperFilter";
+import { addCartRedux } from "../../../store/slice";
+import {HelperFiltro} from "../../filter/HelperFilter";
 interface ProductDetails {
   id: number;
   marca: string;

@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
-import { addCartRedux } from "../../../store/slice";
 import "./Prods.css";
-import { TypesCart } from "../../../types/types";
+import { TypesCart } from "../../../../../types/types";
+import { addCartRedux } from "../../../../../store/index";
 
 const Prods = ({ id, stock, title, img, addkart, desc, price }: TypesCart) => {
   const dispatch = useDispatch();

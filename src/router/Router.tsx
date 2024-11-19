@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import HomePage from "../components/SectionsHome/homepage/HomePage";
 import Filter from "../components/filter/Filter";
+import HomePage from "../components/pages/homepage/HomePage";
 
 
 const App = lazy(() => import("../App"));
 const Dermocosmetica = lazy(
-  () => import("../components/dermocosmetica/Dermocosmetica")
+  () => import("../components/pages/dermocosmetica/Dermocosmetica")
 );
 
 

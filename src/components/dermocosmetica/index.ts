@@ -1,1 +1,0 @@
-import {Dermocosmetica} from "./Dermocosmetica";

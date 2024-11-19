@@ -1,11 +1,11 @@
 import { IconButton } from "@mui/material";
 import { useState } from "react";
-import ShowSelectedProd from "../SectionsHome/viewProducts/ShowSelectedProd";
 import Badge, { BadgeProps } from "@mui/material/Badge";
 import { useSelector } from "react-redux";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { styled } from "@mui/material/styles";
-export const CartIcon = () => {
+import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProducts/ShowSelectedProd";
+ const CartIcon = () => {
   const [view_cart, setEstado] = useState(true);
 
   const first = () => {
@@ -31,3 +31,5 @@ export const CartIcon = () => {
     </ul>
   );
 };
+
+export default CartIcon;

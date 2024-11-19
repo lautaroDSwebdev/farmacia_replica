@@ -1,9 +1,8 @@
-import NewsComp from "../News/NewsComp"
-import CarruselComponent from "../bannerHeader/CarruselComponent"
-import DiscountPrice from "../brands_discount_percent/DiscountPrice"
-import Products1 from "../products1/ProductsFather"
-import Products2 from "../products2/Products2"
-
+import CarruselComponent from "./SectionsHome/bannerHeader/CarruselComponent"
+import DiscountPrice from "./SectionsHome/brands_discount_percent/DiscountPrice"
+import Products2 from "./SectionsHome/products2/Products2"
+import Products1 from "./SectionsHome/products1/ProductsFather"
+import NewsComp from "./SectionsHome/News/NewsComp"
 const HomePage = () => {
     return (
         <>

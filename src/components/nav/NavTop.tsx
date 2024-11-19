@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import data from "../../mock/data.json";
-import { CartIcon } from "./CartIcon";
+import CartIcon from "./CartIcon";
 import DarkLight from "./DarkLight";
-
 export const NavTop = () => {
   const imagenLogo = data.entireHome.logoPagina;
   return (

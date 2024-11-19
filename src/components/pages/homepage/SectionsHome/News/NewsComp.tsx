@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-import data from '../../../mock/data.json'
+import data from '../../../../../mock/data.json'
 
 
 const news = data.entireHome.CarruselBBcreams

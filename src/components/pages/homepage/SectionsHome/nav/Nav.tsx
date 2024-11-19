@@ -1,6 +1,6 @@
 
 import { NavLink } from 'react-router-dom'
-import data from '../../../mock/data.json'
+import data from '../../../../../mock/data.json'
 const nav =  data.entireHome.nav_options
 
 const Nav = () => {

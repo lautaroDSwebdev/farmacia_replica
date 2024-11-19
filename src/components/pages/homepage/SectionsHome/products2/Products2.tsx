@@ -1,9 +1,9 @@
-import data from "../../../store.json"
+import data from "../../../../../store.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useDispatch } from "react-redux";
-import { addCartRedux, delToCartRedux } from "../../../store/slice";
+import { addCartRedux } from "../../../../../store/slice";
 
 
 const prods = data.store.prods1
@@ -17,8 +17,7 @@ const Products2 = () => {
       };
 
       const dispatch = useDispatch()
-      addCartRedux
-      delToCartRedux
+      
     return (
         <div>
             <article className="w-full">
