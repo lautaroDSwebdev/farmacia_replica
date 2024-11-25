@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useDispatch } from "react-redux";
 import { addCartRedux } from "../../../../../store/slice";
+import "./style.css"
 
 
 const prods = data.store.prods1
@@ -33,10 +34,9 @@ const Products2 = () => {
                             {
                                 prods.map((e) => {
                                     return (
-                                    <div key={e.id} className="dark:bg-dark-theme flex mx-auto   flex-col  justify-center  border border-[#eeeded] rounded-md">
-                                        <div className="flex justify-center overflow-hidden">
-                                            <img className="h-[11rem] w-[14rem] cursor-pointer opacity-60 hover:rotate-2
-                                            hover:opacity-100 hover:scale-125  transition-all duration-500 ease-out" src={e.img}/>
+                                    <div key={e.id} className="dark:bg-dark-theme prod_styles">
+                                        <div className="div_child_styles">
+                                            <img className="" src={e.img}/>
                                         </div>
                                         <div className="mx-3 p-3 h-auto">
                                             <ul className="flex gap-4">

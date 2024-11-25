@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "marca": "Algabo",
+    "desc": "Algabo Quitaesmalte Humectante x100ml",
+    "stock": 1,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7791274005312-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "1.460,06"
+  },
+  {
+    "id": 2,
+    "marca": "Algabo",
+    "desc": "Algabo Quitaesmalte Keratina x100ml",
+    "stock": 3,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7791274005329-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "1.460,06"
+  },
+  {
+    "id": 3,
+    "marca": "Asepxia",
+    "desc": "Asepxia Maquillaje En Polvo Compacto BB Natural x 10 gr",
+    "stock": 4,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/650240032455-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "11.203,50"
+  },
+  {
+    "id": 4,
+    "marca": "Cicatricure",
+    "desc": "Cicatricure Maquillaje Liquido Gold Lift 1 Light x30ml",
+    "stock": 2,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7798140254027-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "32.450,00"
+  },
+  {
+    "id": 5,
+    "marca": "Cicatricure",
+    "desc": "Cicatricure Maquillaje Liquido Gold Lift 2 Medium x30ml",
+    "stock": 7,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7798140254034-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "35.695,00"
+  },
+  {
+    "id": 6,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Amor Propio Bienestar",
+    "stock": 2,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899706221641-1-768x768.jpg",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 7,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Amor Propio Orgullo",
+    "stock": 0,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899706221825-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 8,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Amor Propio Respeto",
+    "stock": 1,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899706221856-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 9,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Amor Propio Seguridad",
+    "stock": 0,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899706221764-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 10,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Amor Propio Shot De Autoestima",
+    "stock": 0,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899706221672-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 12,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Crema Black",
+    "stock": 5,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899026400559-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.637,59"
+  },
+  {
+    "id": 13,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Crema Blanco Frances/Petala Branc",
+    "stock": 6,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899026404892-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.637,59"
+  },
+  {
+    "id": 14,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Crema Chic Pele",
+    "stock": 2,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7899026413658-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 15,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Crema Fini Aqui Se Pide Fini",
+    "stock": 1,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7908615000428-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 16,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Crema Fini Avisa Que Hay Fini",
+    "stock": 9,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7908615000367-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  },
+  {
+    "id": 17,
+    "marca": "Colorama",
+    "desc": "Colorama Esmalte Crema Fini Besos De Fini",
+    "stock": 2,
+    "discountImg": "",
+    "discountPrice": "",
+    "img": "https://www.masfarmacias.com/wp-content/uploads/7908615000305-1-768x768.jpg",
+    "imgAlt": "Imagen Producto",
+    "precio": "4.430,00"
+  }
+]

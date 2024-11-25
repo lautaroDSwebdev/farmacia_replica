@@ -35,6 +35,7 @@ const Products = () => {
                                         stock={e.stock}
                                         title={e.title}
                                         img={e.img}
+                                        imgAlt={e.imgAlt}
                                         price={e.price}
                                         addkart={e.add_kart}
                                         desc={e.description}

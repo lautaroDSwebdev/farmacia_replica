@@ -1,0 +1,26 @@
+.prod_styles{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #eeeded;
+    border-radius: 0.375rem ;
+    .div_child_styles{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        img{
+            height: 11rem;
+            width: 14rem;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: all ease-out;
+            transition-duration: .5s ;
+            transform: scale(1.0);
+            &:hover{
+                transform: scale(1.2);
+                rotate: 2deg;
+            }
+        }
+    }
+}

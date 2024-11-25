@@ -1,19 +1,17 @@
-import { Asidefilter } from "../../filter/Asidefilter";
-import data from "./dermocosmetica.json";
-import "./democosmetica.css";
+import { Link } from "react-router-dom";
+import prod from './data.json'
+import "./style.css"
 import { useDispatch } from "react-redux";
 import { addCartRedux } from "../../../store/slice";
 import { HelperFiltro } from "../../filter/HelperFilter";
-import { Link } from "react-router-dom";
 import { ProductDetails } from "../../../types/types";
+import { Asidefilter } from "./Asidefilter";
+const Maquillaje = () => {
 
+const dispatch = useDispatch()
 
-const Dermocosmetica = () => {
-  const prodsDermo = data.paginas.first;
-  const prodsFilter: ProductDetails[] =  HelperFiltro().filterProducts(prodsDermo);
-  console.log(prodsFilter);
-
-  const dispatch = useDispatch();
+const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prod);
+// console.log(prodsFilter)
   return (
     <section className="flex dark:bg-dark-theme">
       <Asidefilter />
@@ -22,7 +20,7 @@ const Dermocosmetica = () => {
           return (
             <ul className="prods_style dark:bg-dark-theme " key={e.id}>
               <Link to={`/producto/${e.id}`}>
-                <img className="h-auto w-[200px]" src={e.img} alt={e.imgAlt} />
+                <img className="h-auto w-[200px]" src={e.img} alt="" />
               </Link>
               <ul className="ul_marca_stock">
                 <p className=" dark:text-white text-[12px] flex items-center ">
@@ -68,7 +66,7 @@ const Dermocosmetica = () => {
         })}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Dermocosmetica;
+export default Maquillaje   

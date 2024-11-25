@@ -48,13 +48,7 @@ li{
     
   }
   
-  .ul-cath{
-    display: inline;
-    height: 3rem;
-  }
-  .ul-cath img, .ul-cath b{
-    cursor: pointer;
-  }
+  
   .options-cathegory{
     display: none;
   }
@@ -84,9 +78,7 @@ li{
   
   
   
-  .center-hamburguer{
-    /* padding: 21px 0; */
-  }
+
   .padding-nav-op{
     height: 3rem;
     

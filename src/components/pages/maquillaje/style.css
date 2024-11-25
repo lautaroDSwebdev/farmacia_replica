@@ -1,0 +1,45 @@
+.prods_style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:12px ;
+    background: #fff;
+    border-radius: 0.125rem ;
+    transition: ease-in-out all .3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    box-shadow: 0px 4px 7px -3px rgba(0, 0, 0, 0.44);
+    
+    &:hover{
+      box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.44);
+    }
+    p{
+      text-align: center;
+    }
+    button{
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 3px;
+      transition: ease-in-out all .3s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.44);
+      &:hover{
+        background: #e4dfdf;
+      }
+    }
+    button:disabled{
+      &:hover{
+        background: none;
+        color:black ;
+      }
+      cursor: not-allowed;
+    }
+    .ul_marca_stock{
+      display: flex;
+      justify-content: space-around;
+    }
+    img{
+      aspect-ratio: 1/1;
+    }
+  }

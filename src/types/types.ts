@@ -1,10 +1,14 @@
 export interface ProductDetails {
-    id: number | never;
-    img: string;
-    title: string;
-    price: string; 
-    desc: string;
-  }
+  id: number;
+  marca: string;
+  desc: string;
+  stock: number;
+  discountImg: string;
+  discountPrice: string;
+  imgAlt: string;
+  img: string;
+  precio: number;
+}
 
   export interface ProductsSelected {
     id: number
@@ -21,6 +25,7 @@ export interface ProductDetails {
     stock: number
     title: string
     img: string
+    imgAlt: string
     addkart: string
     desc: string
     price: number
