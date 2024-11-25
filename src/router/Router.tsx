@@ -1,12 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import HomePage from "../components/SectionsHome/homepage/HomePage";
 import Filter from "../components/filter/Filter";
+import HomePage from "../components/pages/homepage/HomePage";
+import SelectedImgProd from "../components/pages/ProdDermocosmetica/SelectedImgProd";
+import Maquillaje from "../components/pages/maquillaje/Maquillaje";
 
 
 const App = lazy(() => import("../App"));
 const Dermocosmetica = lazy(
-  () => import("../components/dermocosmetica/Dermocosmetica")
+  () => import("../components/pages/dermocosmetica/Dermocosmetica")
 );
 
 
@@ -30,16 +32,20 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/Categoria de productos",
+        path: "/producto/:id",
+        element: <SelectedImgProd/>
+      },
+      {
+        path: "/productos",
         element: <Filter />,
         children: [
           {
-            path: "/Categoria de productos/Dermocosmetica",
+            path: "/productos/Dermocosmetica",
             element: (
               <Suspense
                 fallback={
                   <div className="text-[3rem] flex justify-center">
-                    Carcando Categoria de productos
+                    Carcando productos
                   </div>
                 }
               >
@@ -48,19 +54,19 @@ const router = createBrowserRouter([
             ),
           },
           {
-            path: "/Categoria de productos/Cuidado de Piel",
+            path: "/productos/Maquillaje",
+            element: <Maquillaje/>,
+          },
+          {
+            path: "/productos/Cuidado de Piel",
             element: "Cuidado de piel",
           },
           {
-            path: "/Categoria de productos/Maquillaje",
-            element: "Maquillaje",
-          },
-          {
-            path: "/Categoria de productos/Perfumerias y Fragancias",
+            path: "/productos/Perfumerias y Fragancias",
             element: "Perfumerias y fragancias",
           },
           {
-            path: "/Categoria de productos/Superofertas",
+            path: "/productos/Superofertas",
             element: "Superofertas",
           },
         ],

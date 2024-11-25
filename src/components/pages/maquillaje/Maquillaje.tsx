@@ -1,29 +1,17 @@
-import { Asidefilter } from "../filter/Asidefilter";
-import data from "./dermocosmetica.json";
-import "./democosmetica.css";
+import { Link } from "react-router-dom";
+import prod from './data.json'
+import "./style.css"
 import { useDispatch } from "react-redux";
-import { addCartRedux } from "../../store/slice";
-import {HelperFiltro} from "../filter/HelperFilter";
-interface ProductDetails {
-  id: number;
-  marca: string;
-  desc: string;
-  stock: number;
-  discountImg: string;
-  discountPrice: string;
-  img: string;
-  precio: number;
-}
+import { addCartRedux } from "../../../store/slice";
+import { HelperFiltro } from "../../filter/HelperFilter";
+import { ProductDetails } from "../../../types/types";
+import { Asidefilter } from "./Asidefilter";
+const Maquillaje = () => {
 
-const Dermocosmetica = () => {
-  
-  const prodsDermo = data.paginas.first
-const {filterProducts} =  HelperFiltro()
-const prodsFilter: ProductDetails[] = filterProducts(prodsDermo)
-console.log(prodsFilter)
+const dispatch = useDispatch()
 
-
-  const dispatch = useDispatch();
+const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prod);
+// console.log(prodsFilter)
   return (
     <section className="flex dark:bg-dark-theme">
       <Asidefilter />
@@ -31,20 +19,25 @@ console.log(prodsFilter)
         {prodsFilter.map((e) => {
           return (
             <ul className="prods_style dark:bg-dark-theme " key={e.id}>
-              <img className="h-auto w-[200px]" src={e.img} alt="" />
+              <Link to={`/producto/${e.id}`}>
+                <img className="h-auto w-[200px]" src={e.img} alt="" />
+              </Link>
               <ul className="ul_marca_stock">
-                <p className=" dark:text-white text-[12px] flex items-center ">{e.marca}</p>
-                {
-                  
-                  e.stock > 1 ? (
-                    <p className="text-[#66d151]">stock</p>
-                  ) : (
-                    <p className="text-[#f5493a] dark:text-[#ffffff] ">no stock</p>
-                  )
-                }
+                <p className=" dark:text-white text-[12px] flex items-center ">
+                  {e.marca}
+                </p>
+                {e.stock > 1 ? (
+                  <p className="text-[#66d151]">stock</p>
+                ) : (
+                  <p className="text-[#f5493a] dark:text-[#ffffff] ">
+                    no stock
+                  </p>
+                )}
               </ul>
               <p className="text-[12px]">{e.desc}</p>
-              <p className={`text-[15px] dark:text-white ${!e.discountPrice ? "pb-[3rem]" : ""}`}>
+              <p
+                className={`text-[15px] dark:text-white ${!e.discountPrice ? "pb-[3rem]" : ""}`}
+              >
                 $ {e.precio}
               </p>
               {e.discountPrice || e.discountImg ? (
@@ -73,7 +66,7 @@ console.log(prodsFilter)
         })}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Dermocosmetica;
+export default Maquillaje   

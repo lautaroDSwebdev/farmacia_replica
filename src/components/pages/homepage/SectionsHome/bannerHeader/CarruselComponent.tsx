@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import data from '../../../mock/data.json'
+import data from '../../../../../mock/data.json'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";

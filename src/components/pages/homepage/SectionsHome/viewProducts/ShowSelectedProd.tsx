@@ -1,5 +1,5 @@
-import { ProductDetails } from "../../../types/types";
-import { delToCartRedux } from "../../../store/slice";
+import { ProductDetails } from "../../../../../types/types";
+import { delToCartRedux } from "../../../../../store/index";
 import { useDispatch } from "react-redux";
 import "./showProds.css";
 const ShowSelectedProd = ({

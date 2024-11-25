@@ -1,4 +1,4 @@
-import data from "../../../store.json"
+import data from "../../../../../store.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -35,6 +35,7 @@ const Products = () => {
                                         stock={e.stock}
                                         title={e.title}
                                         img={e.img}
+                                        imgAlt={e.imgAlt}
                                         price={e.price}
                                         addkart={e.add_kart}
                                         desc={e.description}

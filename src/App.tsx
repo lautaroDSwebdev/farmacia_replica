@@ -1,9 +1,9 @@
 import "./style.css";
 
 import { Outlet } from "react-router-dom";
-import Nav from "./components/SectionsHome/nav/Nav";
 import { NavTop } from "./components/nav/NavTop";
 import { Toaster } from 'sonner'
+import Nav from "./components/pages/homepage/SectionsHome/nav/Nav";
 
 function App() {
 

@@ -1,4 +1,4 @@
-import data from'../../../mock/data.json'
+import data from'../../../../../mock/data.json'
 
 
 const discount = data.entireHome.CarruselDescuentos
