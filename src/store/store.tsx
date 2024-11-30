@@ -7,4 +7,7 @@ const store = configureStore({
     }
 })
 
+export type Rootstate = ReturnType<typeof store.getState>
+
+export type dataDispatch = typeof store.dispatch
 export default store

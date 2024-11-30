@@ -4,17 +4,13 @@ import { TypesCart } from "../../../../../types/types";
 import { addCartRedux } from "../../../../../store/index";
 import { Link } from "react-router-dom";
 
-const Prods = ({
-  id,
-  stock,
-  title,
-  img,
-  addkart,
-  desc,
+const Prods = ({id, stock, title, img, addkart, desc,
   price,
   imgAlt,
 }: TypesCart) => {
+
   const dispatch = useDispatch();
+  
   return (
     <div key={id} className="div_prodCart dark:bg-dark-theme">
       <div className="div_imgProd ">

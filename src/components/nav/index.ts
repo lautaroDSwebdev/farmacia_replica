@@ -1,2 +1,2 @@
-export * from "./CartIcon"
-export * from "./DarkLight"
+export * from './CartIcon';
+export * from './DarkLight';

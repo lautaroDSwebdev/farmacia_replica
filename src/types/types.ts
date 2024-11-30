@@ -9,6 +9,10 @@ export interface ProductDetails {
   img: string;
   precio: number;
 }
+export interface TypesFilter{
+  marca: string ;
+  minPrice: number;
+}
 
   export interface ProductsSelected {
     id: number

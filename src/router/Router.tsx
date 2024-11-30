@@ -11,9 +11,6 @@ const Dermocosmetica = lazy(
   () => import("../components/pages/dermocosmetica/Dermocosmetica")
 );
 
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,13 +1,12 @@
-import { useId } from "react";
+import { TypesFilter } from "../../../types/types";
 import { HelperFiltro } from "../../filter/HelperFilter";
 
 export const Asidefilter = () => {
   const { filters, setFilters } = HelperFiltro();
 
-  const minPriceFilterId = useId();
 
-  const handleChangeMinPrice = (event) => {
-    setFilters((prevState) => ({
+  const handleChangeMinPrice = (event: Event) => {
+    setFilters((prevState: TypesFilter) => ({
       ...prevState,
       minPrice: event.target.value,
     }));

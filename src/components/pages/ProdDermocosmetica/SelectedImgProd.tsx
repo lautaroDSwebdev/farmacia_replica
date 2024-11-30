@@ -1,16 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../dermocosmetica/dermocosmetica.json";
 
-interface Root2 {
-  id: number;
-  marca: string;
-  desc: string;
-  stock: number;
-  discountImg?: string;
-  discountPrice?: string;
-  img: string;
-  precio: number;
-}
 
 const SelectedImgProd = () => {
   const prodData = data.paginas.first;

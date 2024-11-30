@@ -6,8 +6,8 @@ const Filter = () => {
   const categoryFilterId = useId();
   const {  setFilters } = HelperFiltro();
 
-  const handleChangeCategory = (event) => {
-    setFilters((prevState) => ({
+  const handleChangeCategory = (event: { target: { value: any; }; }) => {
+    setFilters((prevState: any) => ({
       ...prevState,
       marca: event.target.value,
     }));
