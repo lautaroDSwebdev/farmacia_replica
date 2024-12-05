@@ -20,7 +20,7 @@ const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prod);
           return (
             <ul className="prods_style dark:bg-dark-theme " key={e.id}>
               <Link to={`/producto/${e.id}`}>
-                <img className="h-auto w-[200px]" src={e.img} alt="" />
+                <img className="h-auto w-[200px]" src={e.img} alt={e.imgAlt} />
               </Link>
               <ul className="ul_marca_stock">
                 <p className=" dark:text-white text-[12px] flex items-center ">

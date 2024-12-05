@@ -4,7 +4,7 @@ import Badge, { BadgeProps } from "@mui/material/Badge";
 import { useSelector } from "react-redux";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { styled } from "@mui/material/styles";
-import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProducts/ShowSelectedProd";
+import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProductsCart/ShowSelectedProd";
 import { Rootstate } from "../../store";
  const CartIcon = () => {
   const [view_cart, setEstado] = useState(true);

@@ -1,0 +1,69 @@
+
+:root{
+    --radius: 5px;
+    --padding: 4px;
+    --max-width-container:1083px;
+}
+
+.section_prodSelect{
+    .div_prod{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        max-width: var(--max-width-container);
+    }
+    .div_img{
+        border: 1px solid #9b9999;
+        img{
+            height: auto;
+            max-width: 537px;
+            aspect-ratio: 1/1;
+        }
+    }
+    .div_description{
+        max-width: 500px;
+        .desc{
+            color: red;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .price{
+            font-weight: bold;
+            font-size: 1.5rem;
+            
+        }
+        .div_marcaStock{
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 200px;
+            .marca{
+                border-radius: var(--radius);
+                padding: var(--padding);
+                background-color: #F5F5F5;
+                color: #000;
+            }
+
+            .stock{
+                color: #b3af54;
+            }
+        }
+        .div_price{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1rem;
+            max-width: 100px;
+            .input_number{
+                border: solid 1px #d8d8d8;
+                width: 50px;
+                padding: var(--padding);
+            }
+            button{
+                color: #fff;
+                background: red;
+                padding: var(--padding);
+                border-radius: var(--radius);
+                font-weight: bold;
+            }
+        }
+    }
+}
