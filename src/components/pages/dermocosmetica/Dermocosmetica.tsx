@@ -9,7 +9,7 @@ import { ProductDetails } from "../../../types/types";
 
 const Dermocosmetica = () => {
   const prodsDermo = data.paginas.first;
-  const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prodsDermo);
+  const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prodsDermo) 
   console.log(prodsFilter);
 
   const dispatch = useDispatch();
@@ -38,13 +38,13 @@ const Dermocosmetica = () => {
               </ul>
               <p className="text-[12px]">{e.desc}</p>
               <p
-                className={`text-[15px] dark:text-white ${!e.discountPrice ? "pb-[3rem]" : ""}`}
+                className={`text-[15px] dark:text-white ${!e.discountPrice?.toString() ? "pb-[3rem]" : ""}`}
               >
                 $ {e.precio}
               </p>
-              {e.discountPrice || e.discountImg ? (
+              {e.discountPrice  || e.discountImg ? (
                 <p className="text-[#66d151] font-semibold text-[12px] flex items-center max-w-[100px] mx-auto ">
-                  Con descuento de: $ {e.discountPrice}
+                  Con descuento de: $ {e.discountPrice?.toString() }
                 </p>
               ) : (
                 ""
