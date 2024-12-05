@@ -5,9 +5,23 @@ export interface ProductDetails {
   stock: number;
   discountImg: string;
   discountPrice: string;
-  imgAlt: string;
   img: string;
+  imgAlt?: string;
   precio: number;
+}
+export interface TypesFilter{
+  marca: string ;
+  minPrice: number;
+}
+
+export interface TypesSelectMarca{
+  id: number
+  op: string
+  valor: string
+}
+export interface ContextFilterType{
+  filters:  TypesFilter 
+  setFilters: (state: any )=> any 
 }
 
   export interface ProductsSelected {

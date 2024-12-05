@@ -7,13 +7,13 @@ import { HelperFiltro } from "../../filter/HelperFilter";
 import { Link } from "react-router-dom";
 import { ProductDetails } from "../../../types/types";
 
-
 const Dermocosmetica = () => {
   const prodsDermo = data.paginas.first;
-  const prodsFilter: ProductDetails[] =  HelperFiltro().filterProducts(prodsDermo);
+  const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prodsDermo);
   console.log(prodsFilter);
 
   const dispatch = useDispatch();
+
   return (
     <section className="flex dark:bg-dark-theme">
       <Asidefilter />

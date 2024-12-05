@@ -25,19 +25,7 @@ const CarruselComponent = () => {
         useEffect(()=> {
             value = setTimeout(Autoplay, 3500)
         },[count])
-    
 
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // autoplay: true,
-        speed: 3000,
-        // autoplaySpeed: 10000,
-        cssEase: "linear"
-      };
       const settingsbrands = {
         dots: true,
         infinite: true,

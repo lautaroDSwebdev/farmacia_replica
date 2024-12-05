@@ -4,7 +4,8 @@ import Badge, { BadgeProps } from "@mui/material/Badge";
 import { useSelector } from "react-redux";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { styled } from "@mui/material/styles";
-import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProducts/ShowSelectedProd";
+import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProductsCart/ShowSelectedProd";
+import { Rootstate } from "../../store";
  const CartIcon = () => {
   const [view_cart, setEstado] = useState(true);
 
@@ -19,7 +20,8 @@ import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProducts/ShowSe
       border: `2px solid ${theme.palette.background.paper}`,
     },
   }));
-  const selectorRedux = useSelector((state) => state.cart.cart);
+
+  const selectorRedux = useSelector((state: Rootstate) => state.cart.cart);
   return (
     <ul className=" ">
       <IconButton onClick={first} aria-label="cart">

@@ -1,11 +1,11 @@
-import { ProductDetails } from "../../../../../types/types";
+import {  ProductsSelected } from "../../../../../types/types";
 import { delToCartRedux } from "../../../../../store/index";
 import { useDispatch } from "react-redux";
 import "./showProds.css";
 const ShowSelectedProd = ({
   selectorRedux,
 }: {
-  selectorRedux: ProductDetails[];
+  selectorRedux: ProductsSelected[];
 }) => {
   selectorRedux;
 

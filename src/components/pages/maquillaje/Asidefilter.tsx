@@ -1,13 +1,12 @@
-import { useId } from "react";
+
 import { HelperFiltro } from "../../filter/HelperFilter";
 
 export const Asidefilter = () => {
   const { filters, setFilters } = HelperFiltro();
 
-  const minPriceFilterId = useId();
 
-  const handleChangeMinPrice = (event) => {
-    setFilters((prevState) => ({
+  const handleChangeMinPrice = (event: any) => {
+    setFilters((prevState: any) => ({
       ...prevState,
       minPrice: event.target.value,
     }));
@@ -20,8 +19,8 @@ export const Asidefilter = () => {
         <input className="cursor-pointer"
           type="range"
           name=""
-          min={3000}
-          max={30000}
+          min={0}
+          max={35000}
           id=""
           onChange={handleChangeMinPrice}
           value={filters.minPrice}

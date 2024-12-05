@@ -1,9 +1,14 @@
-import { createContext, useState } from "react"
+import  { createContext, useState } from "react"
+import { ContextFilterType, TypesFilter } from "../types/types"
 
-export const ContextData =  createContext()
+
+
+export const ContextData =  createContext<ContextFilterType | undefined>(undefined)
 
 export const ContextoProveedor = ({children}: {children: any}) => {
-  const [filters, setFilters] = useState({
+
+
+  const [filters, setFilters] = useState<TypesFilter>({
     marca: 'all',
     minPrice: 0
   })

@@ -1,16 +1,15 @@
 import { useId } from "react";
 import { Outlet } from "react-router-dom";
 import { HelperFiltro } from "./HelperFilter";
+import { TypesSelectMarca } from "../../types/types";
 
 const Filter = () => {
   const categoryFilterId = useId();
-  const {  setFilters } = HelperFiltro();
+  const { setFilters } = HelperFiltro();
 
-  const handleChangeCategory = (event) => {
-    setFilters((prevState) => ({
-      ...prevState,
-      marca: event.target.value,
-    }));
+  const handleChangeCategory = (event: any) => {
+    setFilters((prevState: TypesSelectMarca) => ({ ...prevState, marca: event.target.value }));
+    console.log(event.target.value)
   };
   const filterData = [
     {
@@ -47,8 +46,11 @@ const Filter = () => {
             <p className="flex items-center opacity-70">
               inicio/Dermocosmetica
             </p>
+
             <div className="">
-              <label className="hidden" htmlFor={categoryFilterId}>Categoria</label>
+              <label className="hidden" htmlFor={categoryFilterId}>
+                Categoria
+              </label>
               <select
                 id={categoryFilterId}
                 onChange={handleChangeCategory}

@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Filter from "../components/filter/Filter";
 import HomePage from "../components/pages/homepage/HomePage";
-import SelectedImgProd from "../components/pages/ProdDermocosmetica/SelectedImgProd";
+import SelectedImgProd from "../components/pages/ProdSelected/SelectedImgProd";
 import Maquillaje from "../components/pages/maquillaje/Maquillaje";
 
 
@@ -10,9 +10,6 @@ const App = lazy(() => import("../App"));
 const Dermocosmetica = lazy(
   () => import("../components/pages/dermocosmetica/Dermocosmetica")
 );
-
-
-
 
 const router = createBrowserRouter([
   {

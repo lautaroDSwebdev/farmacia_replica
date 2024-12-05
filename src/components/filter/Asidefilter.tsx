@@ -1,18 +1,20 @@
-import { useId } from "react";
+// import { useId } from "react";
+import { ChangeEvent } from "react";
+import { TypesFilter } from "../../types/types";
 import { HelperFiltro } from "./HelperFilter";
 
 export const Asidefilter = () => {
   const { filters, setFilters } = HelperFiltro();
 
-  const minPriceFilterId = useId();
 
-  const handleChangeMinPrice = (event) => {
-    setFilters((prevState) => ({
+  const handleChangeMinPrice = (event: ChangeEvent<HTMLInputElement>) => {
+    const target = event.target.value
+    if(!target) return null
+    setFilters((prevState: TypesFilter) => ({
       ...prevState,
-      minPrice: event.target.value,
-    }));
+      minPrice: Number(target),
+    }) );
   };
-
   return (
     <aside className="     ">
       <div className="w-full m-3 relative left-0 dark:bg-dark-theme   mx-auto  ">

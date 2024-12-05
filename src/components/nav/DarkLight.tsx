@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./style.css";
-import ReactSwitch from "react-switch";
 import { LuSun } from "react-icons/lu";
 import { FaMoon } from "react-icons/fa6";
 const DarkLight = () => {
@@ -14,9 +13,9 @@ const DarkLight = () => {
 
   useEffect(() => {
     if (theme === "dark") {
-      document.querySelector("html").classList.add("dark");
+      document.querySelector("html")?.classList.add("dark");
     } else {
-      document.querySelector("html").classList.remove("dark");
+      document.querySelector("html")?.classList.remove("dark");
     }
   }, [theme]);
 
@@ -25,34 +24,12 @@ const DarkLight = () => {
   };
 
   return (
-    // <label htmlFor="theme" className="theme " >
-    //   <span className="theme__toggle-wrap">
-    //     <input
-    //       id="theme"
-    //       className="theme__toggle"
-    //       type="checkbox"
-    //       role="switch"
-    //       name="theme"
-    //       // value="dark"
-    //
-    //     />
-    //     <span className="theme__fill"></span>
-    //     <span className="theme__icon">
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //       <span className="theme__icon-part"></span>
-    //     </span>
-    //   </span>
-    // </label>
-
     <button onClick={handleChangeTheme}>
-      {theme === "dark" ? <LuSun className="text-3xl text-[#fbff2c]   " /> : <FaMoon className="text-3xl  " />}
+      {theme === "dark" ? (
+        <LuSun className="text-3xl text-[#fbff2c]   " />
+      ) : (
+        <FaMoon className="text-3xl  " />
+      )}
     </button>
   );
 };
