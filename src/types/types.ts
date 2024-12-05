@@ -1,13 +1,13 @@
 export interface ProductDetails {
-  id: number;
-  marca: string;
-  desc: string;
-  stock: number;
-  discountImg: string;
-  discountPrice: string;
-  img: string;
-  imgAlt?: string;
-  precio: number;
+  id: number
+  marca: string
+  desc: string
+  stock: number
+  discountImg?: string
+  discountPrice?: number | null
+  img: string
+  imgAlt: string
+  precio: number
 }
 export interface TypesFilter{
   marca: string ;
