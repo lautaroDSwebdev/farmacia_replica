@@ -7,7 +7,7 @@ import { addCartRedux } from "../../../../../store/slice";
 import "./style.css"
 
 
-const prods = data.store.prods1
+const prods = data.store.prods2
 const Products2 = () => {
     const settingsbrands = {
         dots: true,
