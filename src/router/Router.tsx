@@ -7,6 +7,7 @@ import Maquillaje from "../components/pages/maquillaje/Maquillaje";
 
 
 const App = lazy(() => import("../App"));
+
 const Dermocosmetica = lazy(
   () => import("../components/pages/dermocosmetica/Dermocosmetica")
 );
