@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import Prods from "./Prods";
 
 
-const prods = data.store.prods2
+const prods = data.store.prods1
 const Products = () => {
     
 
