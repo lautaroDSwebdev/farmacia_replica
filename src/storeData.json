@@ -60,7 +60,7 @@
         "prods2": [
             {
                 "id": "1",
-                "img": "../public/assets/paquete.jpg",
+                "img": "../public/paquete.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -70,7 +70,7 @@
             },
             {
                 "id": "2",
-                "img": "../public/assets/paquete2.jpg",
+                "img": "../public/paquete2.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -80,7 +80,7 @@
             },
             {
                 "id": "3",
-                "img": "../public/assets/paquete3.jpg",
+                "img": "../public/paquete3.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -90,7 +90,7 @@
             },
             {
                 "id": "4",
-                "img": "../public/assets/paquete4.jpg",
+                "img": "../public/paquete4.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -100,7 +100,7 @@
             },
             {
                 "id": "5",
-                "img": "../public/assets/paquete5.jpg",
+                "img": "../public/paquete5.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
