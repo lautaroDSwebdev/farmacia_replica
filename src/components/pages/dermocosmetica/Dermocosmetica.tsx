@@ -2,10 +2,10 @@ import { Asidefilter } from "../../filter/Asidefilter";
 import data from "./dermocosmetica.json";
 import "./democosmetica.css";
 import { useDispatch } from "react-redux";
-import { addCartRedux } from "../../../store/slice";
 import { HelperFiltro } from "../../filter/HelperFilter";
 import { Link } from "react-router-dom";
 import { ProductDetails } from "../../../types/types";
+import { addCartRedux } from "../../../store";
 
 const Dermocosmetica = () => {
   const prodsDermo = data.paginas.first;
