@@ -1,7 +1,7 @@
 {
     "entireHome":{
         "navtitle": "¡Usted está comprando en Mas Farmacia !",
-        "logoPagina": "../../public/assets/logo.png",
+        "logoPagina": "/src/assets/logo.png",
         "nav_options": [
             {
                 "id": 1,
