@@ -53,31 +53,31 @@
         "CarruselMarcas":[
             {
                 "id": 1,
-                "img": "../assets/Avene-logo.svg",
+                "img": "./Avene-logo.svg",
                 "imgAlt": "Imagen Producto",
                 "url": ""
             },
             {
                 "id": 2,
-                "img": "../assets/Bioderma-logo.svg",
+                "img": "./Bioderma-logo.svg",
                 "imgAlt": "Imagen Producto",
                 "url": ""
             },
             {
                 "id": 3,
-                "img": "../assets/Isdin-Logo5-pmoh897tr9nkdmw9mxvhig805du6oup7lc99erq4ac.png",
+                "img": "./Isdin-Logo5-pmoh897tr9nkdmw9mxvhig805du6oup7lc99erq4ac.png",
                 "imgAlt": "Imagen Producto",
                 "url": ""
             },
             {
                 "id": 4,
-                "img": "../assets/Vichy-logo.svg",
+                "img": "./Vichy-logo.svg",
                 "imgAlt": "Imagen Producto",
                 "url": ""
             },
             {
                 "id": 5,
-                "img": "../assets/La-Roche-Posay-logo.svg",
+                "img": "./La-Roche-Posay-logo.svg",
                 "imgAlt": "Imagen Producto",
                 "url": ""
             }
@@ -163,7 +163,7 @@
         "CarruselProd1": [
             {
                 "id": 1,
-                "img": "../assets/paquete.jpg",
+                "img": "./paquete.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -173,7 +173,7 @@
             },
             {
                 "id": 2,
-                "img": "../assets/paquete2.jpg",
+                "img": "./paquete2.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -183,7 +183,7 @@
             },
             {
                 "id": 3,
-                "img": "../assets/paquete3.jpg",
+                "img": "./paquete3.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -193,7 +193,7 @@
             },
             {
                 "id": 4,
-                "img": "../assets/paquete4.jpg",
+                "img": "./paquete4.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -203,7 +203,7 @@
             },
             {
                 "id": 5,
-                "img": "../assets/paquete5.jpg",
+                "img": "./paquete5.jpg",
                 "imgAlt": "Imagen Producto",
                 "title": "CAPILATIS",
                 "price": 2581.00,
@@ -215,28 +215,28 @@
         "CarruselBBcreams": [
             {
                 "id": 1,
-                "img": "../assets/cara1.jpg",
+                "img": "./cara1.jpg",
                 "title": "¿Que es la BB cream?",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
             },
             {
                 "id": 2,
-                "img": "../assets/cara2.jpg",
+                "img": "./cara2.jpg",
                 "title": "¿Que es la BB cream?",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
             },
             {
                 "id": 3,
-                "img": "../assets/cara3.jpg",
+                "img": "./cara3.jpg",
                 "title": "¿Que es la BB cream?",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
             },
             {
                 "id": 4,
-                "img": "../assets/cara4.jpg",
+                "img": "./cara4.jpg",
                 "title": "¿Que es la BB cream?",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
