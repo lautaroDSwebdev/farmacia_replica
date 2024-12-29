@@ -10,6 +10,9 @@ li{
     scrollbar-width: thin;
     
   }
+.aspect-ratio{
+  aspect-ratio: 1280/267;
+}
   .read_more{
       border: solid 1px rgb(42, 40, 40) ;
       border-radius: .5rem;

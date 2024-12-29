@@ -23,7 +23,7 @@ const CarruselComponent = () => {
         }
     
         useEffect(()=> {
-            value = setTimeout(Autoplay, 3500)
+            value = setTimeout(Autoplay, 5000)
         },[count])
 
       const settingsbrands = {
@@ -38,19 +38,19 @@ const CarruselComponent = () => {
 
             <Link  to={banners[count].link}>
                 <div key={banners[count].id} className='pt-[3rem]  '>
-                    <img src={banners[count].img} alt={banners[count].alt} />
+                    <img className="aspect-ratio"  src={banners[count].img} alt={banners[count].alt} />
                 </div>
             </Link>
 
-            <Slider {...settingsbrands} >
+            {/* <Slider {...settingsbrands} >
                 {
                     carruselMarcas.map((brand) => (
-                        <div key={brand.id} className='pt-[3rem]'>
+                        <div  key={brand.id} className='pt-[3rem] max-w-maximo-ancho mx-auto'>
                             <img className="max-h-[30px]" src={brand.img} alt={brand.url} />
                         </div>
                     ))
                 }
-            </Slider>
+            </Slider> */}
             
 
         </div>
