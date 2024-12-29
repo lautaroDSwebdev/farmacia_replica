@@ -1,7 +1,7 @@
 {
     "entireHome":{
         "navtitle": "¡Usted está comprando en Mas Farmacia !",
-        "logoPagina": "/public/logo original.png",
+        "logoPagina": "./logo original.png",
         "nav_options": [
             {
                 "id": 1,
@@ -28,25 +28,25 @@
             {
                 "id": 1,
                 "link": "#",
-                "img": "../../public/assets/back-image.jpg",
+                "img": "./back-image.jpg",
                 "alt": "imagen1"
             },
             {
                 "id": 2,
                 "link": "#",
-                "img": "../../public/assets/back-image2.jpg",
+                "img": "./back-image2.jpg",
                 "alt": "imagen2"
             },
             {
                 "id": 3,
                 "link": "#",
-                "img": "../../public/assets/back-image3.jpg",
+                "img": "./back-image3.jpg",
                 "alt": "imagen3"
             },
             {
                 "id": 4,
                 "link": "#",
-                "img": "../../public/assets/back-image4.jpg",
+                "img": "./back-image4.jpg",
                 "alt": "imagen4"
             }
         ],
