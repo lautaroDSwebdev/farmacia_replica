@@ -2,6 +2,14 @@
     "entireHome":{
         "navtitle": "¡Usted está comprando en Mas Farmacia !",
         "logoPagina": "./logo original.png",
+        "home_redCardsTop": [
+            "./make-up.png",
+            "./Perfumes.png"
+        ],
+        "home_redCardsBottom": [
+            "./Maternidad-y-bebe.png",
+            "./Skin-care.png"
+        ],
         "nav_options": [
             {
                 "id": 1,
