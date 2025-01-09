@@ -13,15 +13,15 @@ const HomePage = () => {
         <DiscountPrice/>
             <article className="pt-[3rem] w-full">
                 <div className="flex justify-center gap-3 max-w-maximo-ancho mx-auto">
-                    <img className="h-[10rem] cursor-pointer" src={home_redCardsTop[0]} alt=""/>
-                    <img className="h-[10rem] cursor-pointer" src={home_redCardsTop[1]} alt=""/>
+                    <img className="h-[10rem] cursor-pointer" src="./make-up.png" alt="Card Make-up"/>
+                    <img className="h-[10rem] cursor-pointer" src="./Perfumes.png" alt="Card Perfumes"/>
                 </div>
             </article>
         <Products1/>
             <article className="pt-[3rem] w-full">
                 <div className="flex justify-center gap-3 max-w-maximo-ancho mx-auto">
-                    <img className="h-[10rem] cursor-pointer" src={home_redCardsBottom[0]} alt=""/>
-                    <img className="h-[10rem] cursor-pointer" src={home_redCardsBottom[1]} alt=""/>
+                    <img className="h-[10rem] cursor-pointer" src="./Maternidad-y-bebe.png" alt="Card Maternidad-y-bebe"/>
+                    <img className="h-[10rem] cursor-pointer" src="./Skin-care.png" alt="Card Skin-care"/>
                 </div>
             </article>
         <Products2/>
