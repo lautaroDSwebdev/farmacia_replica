@@ -1,4 +1,4 @@
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import data from '../../../../../mock/data.json'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const banners = data.entireHome.CarruselBannerImagenes
-const carruselMarcas = data.entireHome.CarruselMarcas
+// const carruselMarcas = data.entireHome.CarruselMarcas
 
 const CarruselComponent = () => {
     let value
@@ -26,13 +26,13 @@ const CarruselComponent = () => {
             value = setTimeout(Autoplay, 5000)
         },[count])
 
-      const settingsbrands = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1
-      };
+      // const settingsbrands = {
+      //   dots: true,
+      //   infinite: true,
+      //   speed: 500,
+      //   slidesToShow: 4,
+      //   slidesToScroll: 1
+      // };
   return (
     <div>
 

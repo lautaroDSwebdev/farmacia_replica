@@ -9,6 +9,8 @@ export const NavTop = () => {
   const imagenLogo = data.entireHome.logoPagina;
   const [user] = useAuthState(Auth)
 
+
+
   const nav = useNavigate()
 
   const NavLogin = () => {
@@ -42,8 +44,8 @@ export const NavTop = () => {
               <button  onClick={NavLogin} className="cursor-pointer hover:text-red-600 font-semibold ">Ingresar | Registrarme</button>
               :
               <button className="hover:bg-slate-300 flex gap-3 p-2 rounded-md" onClick={NavLogin}>
-                <p>{user.displayName}</p>
-                <img className="g-img-google-nav" src={user.photoURL} alt="Imagen Google" />
+                <p>{user?.displayName}</p>
+                <img className="g-img-google-nav" src={user?.photoURL as string} alt="Imagen Google" />
               </button>
           }
           <CartIcon />
