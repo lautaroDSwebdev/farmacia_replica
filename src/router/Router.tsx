@@ -4,6 +4,7 @@ import Filter from "../components/filter/Filter";
 import HomePage from "../components/pages/homepage/HomePage";
 import SelectedImgProd from "../components/pages/ProdSelected/SelectedImgProd";
 import Maquillaje from "../components/pages/maquillaje/Maquillaje";
+import Login from "../components/pages/LoginGoogle/Login";
 
 
 const App = lazy(() => import("../App"));
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
         <App />
       </Suspense>
     ),
+    
     children: [
       {
         path: "/",
@@ -63,7 +65,12 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: "/login",
+        element: <Login/>
+      }
     ],
+    
   },
 ]);
 

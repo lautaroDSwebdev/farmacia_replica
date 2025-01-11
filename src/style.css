@@ -10,6 +10,17 @@ li{
     scrollbar-width: thin;
     
   }
+ .g-img-google-nav{
+  height: auto;
+  width: 30px;
+  border-radius: 10rem;
+} 
+.g-img-google-login{
+  height: auto;
+  width: 100px;
+  border-radius: 10rem;
+  
+ }
 .aspect-ratio{
   aspect-ratio: 1280/267;
 }
@@ -72,28 +83,13 @@ li{
   body{
       overflow-x: hidden;
     }
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
   .padding-nav-op{
     height: 3rem;
-    
-    
   }
-  
+
   
   /* CARRUSEL */
-  
-  
-  
- 
   .slidess{
       overflow-x: hidden;
      display: flex;
