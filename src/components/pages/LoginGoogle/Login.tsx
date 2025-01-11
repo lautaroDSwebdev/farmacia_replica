@@ -1,7 +1,7 @@
 import "./style.css"
 import { FcGoogle } from "react-icons/fc";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Auth, Firestore, googleProvider } from "../../../firebase/firebase";
+import { Auth,  googleProvider } from "../../../firebase/firebase";
 import { signOut, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -20,6 +20,7 @@ const Login = () => {
         setTimeout(async () => {
             const res = await signInWithPopup(Auth, googleProvider)
             setSignin(false)
+            console.log(res)
         }, 2000)
     }
 
@@ -66,7 +67,7 @@ const Login = () => {
                             <div className="flex flex-col items-center">
                                 <p>{user.displayName}</p>
                                 <p>{user.email}</p>
-                                <img className="g-img-google-login" src={user.photoURL} alt="Imagen Google" />
+                                <img className="g-img-google-login" src={user.photoURL as string} alt="Imagen Google" />
                             </div>
 
                             <p className="footer-text">Al continuar, aceptas nuestros <a href="#">términos y condiciones</a>.</p>
