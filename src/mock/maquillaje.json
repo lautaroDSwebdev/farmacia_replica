@@ -6,7 +6,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod1-maquillaje.png",
+    "img": "./public/prod1-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 37279,
     "masComprado": 12
@@ -18,7 +18,7 @@
     "stock": 3,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod2-maquillaje.png",
+    "img": "./public/prod2-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 38279,
     "masComprado": 10
@@ -30,7 +30,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod3-maquillaje.png",
+    "img": "./public/prod3-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 46279,
     "masComprado": 17
@@ -42,7 +42,7 @@
     "stock": 2,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod4-maquillaje.png",
+    "img": "./public/prod4-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 26279,
     "masComprado": 19
@@ -54,7 +54,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod5-maquillaje.png",
+    "img": "./public/prod5-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 46279,
     "masComprado": 24
@@ -66,7 +66,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod6-maquillaje.png",
+    "img": "./public/prod6-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 9
@@ -78,7 +78,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod7-maquillaje.png",
+    "img": "./public/prod7-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 66279,
     "masComprado": 10
@@ -90,7 +90,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod8-maquillaje.png",
+    "img": "./public/prod8-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 16279,
     "masComprado": 11
@@ -102,7 +102,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod9-maquillaje.png",
+    "img": "./public/prod9-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 26279,
     "masComprado": 20
@@ -114,7 +114,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod10-maquillaje.png",
+    "img": "./public/prod10-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 46279,
     "masComprado": 12
@@ -126,7 +126,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod11-maquillaje.png",
+    "img": "./public/prod11-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 13
@@ -138,7 +138,7 @@
     "stock": 6,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod12-maquillaje.png",
+    "img": "./public/prod12-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 16
@@ -150,7 +150,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod13-maquillaje.png",
+    "img": "./public/prod13-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 3
@@ -162,7 +162,7 @@
     "stock": 2,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod14-maquillaje.png",
+    "img": "./public/prod14-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 17
@@ -174,7 +174,7 @@
     "stock": 9,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod15-maquillaje.png",
+    "img": "./public/prod15-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 20
@@ -186,7 +186,7 @@
     "stock": 0,
     "discountImg": "",
     "discountPrice": "",
-    "img": "../../public/prod16-maquillaje.png",
+    "img": "./public/prod16-maquillaje.png",
     "imgAlt": "Imagen Producto",
     "precio": 36279,
     "masComprado": 19
