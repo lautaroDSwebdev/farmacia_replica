@@ -1,30 +1,14 @@
-##Rama del proyecto
-.
-├── .
-├── ├── Documentacion proyecto
-├── ├── flujo de carpetas
-└── └── src/
-|-- ├── ├── assets/
-|-- ├── ├── components/CartIcon.tsx NavTop.tsx
-|-- ├── │   ├── ciudadodepiel/
-|-- ├── │   ├── dermocosmetica/
-|-- ├── │   ├── filter/(la logica del filtro de productos)
-|-- ├── │   ├── maquillaje/
-|-- ├── │   ├── permunesYfragancias
-|-- ├── │   └── sectionhome/
-|-- ├── │       ├── bannerheader/(logica del carrusel)
-|-- ├── │       ├── brandsdiscountpercent/
-|-- ├── │       ├── header/
-|-- ├── │       ├── homepage/
-|-- ├── │       ├── nav/
-|-- ├── │       ├── news/
-|-- ├── │       ├── products1/(componente y logica del carrusel 1 productos)/
-|-- ├── │       │   ├── /Prods.tsx
-|-- ├── │       │   └── /ProductsFather.tsx
-|-- ├── │       ├── products2/(componente y logica del carrusel 2 productos)
-|-- ├── │       └── viewProducts/(componente y logica de el carrito)
-|-- ├── ├── mock/(json con toda la aplicacion)
-|-- ├── ├── context/(la logica de negocio con el estado global)
-|-- ├── ├── router/
-`-- └── └── types/
-    `-- └── app/(el nav bar y el icono del carrito con el estado del cart con productos)
+### Original Website https://www.masfarmacias.com/?farmacia=farmacia-bufor
+
+# This is a project I did on my own that tries to give some improvements to the original page
+## Technologies:
+
+## React js
+## Typescript
+## Firebase
+## Redux Toolkit
+## Tailwind
+## Material icons
+## Slick Carrusel
+
+![image](https://github.com/user-attachments/assets/d9a19f8b-c42d-4e36-8e4a-5252d14dcd81)
