@@ -1,15 +1,15 @@
 import { Asidefilter } from "../../filter/Asidefilter";
-import data from "./dermocosmetica.json";
+import data from "../../../mock/dermocosmetica.json";
 import "./democosmetica.css";
 import { useDispatch } from "react-redux";
-import { HelperFiltro } from "../../filter/HelperFilter";
+import { DataComponentFilter } from "../../filter/DataFilter";
 import { Link } from "react-router-dom";
 import { ProductDetails } from "../../../types/types";
 import { addCartRedux } from "../../../store";
 
 const Dermocosmetica = () => {
   const prodsDermo = data.paginas.first;
-  const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prodsDermo) 
+  const prodsFilter: ProductDetails[] = DataComponentFilter().filterProducts(prodsDermo)
   console.log(prodsFilter);
 
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ const Dermocosmetica = () => {
                 <p className=" dark:text-white text-[12px] flex items-center ">
                   {e.marca}
                 </p>
-                {e.stock > 1 ? (
+                {e.stock > 0 ? (
                   <p className="text-[#66d151]">stock</p>
                 ) : (
                   <p className="text-[#f5493a] dark:text-[#ffffff] ">
@@ -42,27 +42,37 @@ const Dermocosmetica = () => {
               >
                 $ {e.precio}
               </p>
-              {e.discountPrice  || e.discountImg ? (
+              {e.discountPrice || e.discountImg ? (
                 <p className="text-[#66d151] font-semibold text-[12px] flex items-center max-w-[100px] mx-auto ">
-                  Con descuento de: $ {e.discountPrice?.toString() }
+                  Con descuento de: $ {e.discountPrice?.toString()}
                 </p>
               ) : (
                 ""
               )}
-              <button
-                onClick={() =>
-                  dispatch(
-                    addCartRedux({
-                      id: e.id,
-                      img: e.img,
-                      title: e.marca,
-                      price: e.precio,
-                    })
-                  )
-                }
-              >
-                agregar al carrito
-              </button>
+              {
+                e.stock > 0 ?
+                  <button
+                    onClick={() =>
+                      dispatch(
+                        addCartRedux({
+                          id: e.id,
+                          img: e.img,
+                          title: e.marca,
+                          price: e.precio,
+                        })
+                      )
+                    }
+                  >
+                    agregar al carrito
+                  </button> :
+
+                  <button
+                    disabled
+                
+                  >
+                    agregar al carrito
+                  </button>
+              }
             </ul>
           );
         })}

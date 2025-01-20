@@ -1,11 +1,11 @@
 import { useId } from "react";
 import { Outlet } from "react-router-dom";
-import { HelperFiltro } from "./HelperFilter";
+import { DataComponentFilter } from "./DataFilter";
 import { TypesSelectMarca } from "../../types/types";
 
 const Filter = () => {
   const categoryFilterId = useId();
-  const { setFilters } = HelperFiltro();
+  const { setFilters } = DataComponentFilter();
 
   const handleChangeCategory = (event: any) => {
     setFilters((prevState: TypesSelectMarca) => ({ ...prevState, marca: event.target.value }));
@@ -14,24 +14,34 @@ const Filter = () => {
   const filterData = [
     {
       id: 1,
-      op: "Todo",
-      valor: "all",
+      op: "todo",
+      masComprado: "all",
     },
     {
       id: 2,
-      op: "A-Derma",
-      valor: "A-Derma",
+      op: "mas comprado",
+      masComprado: "moresale",
     },
     {
-      id: 3,
-      op: "La Roche-Posay",
-      valor: "La Roche-Posay",
-    },
-    {
-      id: 4,
-      op: "Anthelios",
-      valor: "Anthelios",
-    },
+      id:3,
+      op: "en stock",
+      stock: 0
+    }
+    // {
+    //   id: 2,
+    //   op: "A-Derma",
+    //   valor: "A-Derma",
+    // },
+    // {
+    //   id: 3,
+    //   op: "La Roche-Posay",
+    //   valor: "La Roche-Posay",
+    // },
+    // {
+    //   id: 4,
+    //   op: "Anthelios",
+    //   valor: "Anthelios",
+    // },
   ];
 
   return (
@@ -57,7 +67,7 @@ const Filter = () => {
                 className="p-2 rounded-md cursor-pointer focus:outline-none dark:bg-dark_placeholderYborder"
               >
                 {filterData.map((e) => (
-                  <option key={e.id} value={e.valor}>
+                  <option key={e.id} value={e.masComprado}>
                     {e.op}
                   </option>
                 ))}

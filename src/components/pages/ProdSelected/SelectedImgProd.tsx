@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import data from "../dermocosmetica/dermocosmetica.json";
+import data from "../../../mock/dermocosmetica.json";
 import "./style.css";
 import { MdShoppingCart } from "react-icons/md";
 import { addCartRedux } from "../../../store/index";

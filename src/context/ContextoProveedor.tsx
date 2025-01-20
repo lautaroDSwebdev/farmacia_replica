@@ -10,7 +10,9 @@ export const ContextoProveedor = ({children}: {children: any}) => {
 
   const [filters, setFilters] = useState<TypesFilter>({
     marca: 'all',
-    minPrice: 0
+    minPrice: 0,
+    masComprado: 15,
+    inStock: 0
   })
 
   return (

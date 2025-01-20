@@ -1,10 +1,10 @@
 // import { useId } from "react";
 import { ChangeEvent } from "react";
 import { TypesFilter } from "../../types/types";
-import { HelperFiltro } from "./HelperFilter";
+import { DataComponentFilter } from "./DataFilter";
 
 export const Asidefilter = () => {
-  const { filters, setFilters } = HelperFiltro();
+  const { filters, setFilters } = DataComponentFilter();
 
 
   const handleChangeMinPrice = (event: ChangeEvent<HTMLInputElement>) => {
@@ -16,13 +16,13 @@ export const Asidefilter = () => {
     }) );
   };
   return (
-    <aside className="     ">
+    <aside className=" ">
       <div className="w-full m-3 relative left-0 dark:bg-dark-theme   mx-auto  ">
         <p>Precio a partir de ${filters.minPrice}</p>
         <input className="cursor-pointer"
           type="range"
           name=""
-          min={30000}
+          min={0}
           max={65000}
           id=""
           onChange={handleChangeMinPrice}

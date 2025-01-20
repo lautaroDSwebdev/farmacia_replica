@@ -1,8 +1,8 @@
 
-import { HelperFiltro } from "../../filter/HelperFilter";
+import { DataComponentFilter } from "../../filter/DataFilter";
 
 export const Asidefilter = () => {
-  const { filters, setFilters } = HelperFiltro();
+  const { filters, setFilters } = DataComponentFilter();
 
 
   const handleChangeMinPrice = (event: any) => {
@@ -19,8 +19,8 @@ export const Asidefilter = () => {
         <input className="cursor-pointer"
           type="range"
           name=""
-          min={0}
-          max={35000}
+          min={35000}
+          max={60000}
           id=""
           onChange={handleChangeMinPrice}
           value={filters.minPrice}

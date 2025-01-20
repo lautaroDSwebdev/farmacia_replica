@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import prod from './data.json'
+import prod from '../../../mock/maquillaje.json'
 import "./style.css"
 import { useDispatch } from "react-redux";
 import { addCartRedux } from "../../../store/slice";
-import { HelperFiltro } from "../../filter/HelperFilter";
+import { DataComponentFilter } from "../../filter/DataFilter";
 import { ProductDetails } from "../../../types/types";
-import { Asidefilter } from "./Asidefilter";
+import { Asidefilter } from "../../filter/Asidefilter";
 const Maquillaje = () => {
 
-const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prod);
-// console.log(prodsFilter)
+  const prodsFilter: ProductDetails[] = DataComponentFilter().filterProducts(prod);
+  // console.log(prodsFilter)
   return (
     <section className="flex dark:bg-dark-theme">
       <Asidefilter />
@@ -26,7 +26,7 @@ const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prod);
                 <p className=" dark:text-white text-[12px] flex items-center ">
                   {e.marca}
                 </p>
-                {e.stock > 1 ? (
+                {e.stock > 0 ? (
                   <p className="text-[#66d151]">stock</p>
                 ) : (
                   <p className="text-[#f5493a] dark:text-[#ffffff] ">
@@ -47,20 +47,30 @@ const prodsFilter: ProductDetails[] = HelperFiltro().filterProducts(prod);
               ) : (
                 ""
               )}
-              <button
-                onClick={() =>
-                  dispatch(
-                    addCartRedux({
-                      id: e.id,
-                      img: e.img,
-                      title: e.marca,
-                      price: e.precio,
-                    })
-                  )
-                }
-              >
-                agregar al carrito
-              </button>
+
+              {
+                e.stock > 1 ?
+                  <button
+                    onClick={() =>
+                      dispatch(
+                        addCartRedux({
+                          id: e.id,
+                          img: e.img,
+                          title: e.marca,
+                          price: e.precio,
+                        })
+                      )
+                    }
+                  >
+                    agregar al carrito
+                  </button> :
+                  <button
+                    disabled
+
+                  >
+                    agregar al carrito
+                  </button>
+              }
             </ul>
           );
         })}

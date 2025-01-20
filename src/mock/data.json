@@ -1,7 +1,7 @@
 {
     "entireHome":{
         "navtitle": "¡Usted está comprando en Mas Farmacia !",
-        "logoPagina": "./logo original.png",
+        "logoPagina": "./logo.png",
         "home_redCardsTop": [
             "./make-up.png",
             "./Perfumes.png"

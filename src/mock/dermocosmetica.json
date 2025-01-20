@@ -5,12 +5,13 @@
         "id": 1,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Aceite de Baño x500ml",
-        "stock": 5,
+        "stock": 0,
         "discountImg": "",
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/7799075000680-768x768.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 36279
+        "precio": 36279,
+        "masComprado": 12
       },
       {
         "id": 2,
@@ -21,18 +22,20 @@
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/7798095419694-768x768.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 46955
+        "precio": 46955,
+        "masComprado": 10
       },
       {
         "id": 3,
         "marca": "A-Derma",
         "desc": "A Derma Exomega Control Crema Emoliente X200ml",
-        "stock": 2,
+        "stock": 0,
         "discountImg": "",
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/7798095419717-768x768.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 37206
+        "precio": 37206,
+        "masComprado": 3
       },
       {
         "id": 4,
@@ -43,7 +46,8 @@
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/7799075000697-768x768.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 42153
+        "precio": 42153,
+        "masComprado": 4
       },
       {
         "id": 5,
@@ -54,7 +58,8 @@
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/7798095419670-768x768.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 64817
+        "precio": 64817,
+        "masComprado": 15
       },
       {
         "id": 6,
@@ -65,7 +70,8 @@
         "discountPrice": 65.025,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875761031-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 42266
+        "precio": 42266,
+        "masComprado": 20
       },
       {
         "id": 7,
@@ -76,7 +82,8 @@
         "discountPrice": 65.025,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875761031-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 42266
+        "precio": 42266,
+        "masComprado": 15
       },
       {
         "id": 8,
@@ -84,21 +91,23 @@
         "desc": "Anthelios Dermo Pedia Lotion F50 X250ml",
         "stock": 3,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": 64.860,
+        "discountPrice": 64.86,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875550628.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 42159
+        "precio": 42159,
+        "masComprado": 2
       },
       {
         "id": 9,
         "marca": "La Roche-Posay",
         "desc": "Anthelios Mineral One Fps50+ Tono 02 30 Ml",
-        "stock": 1,
+        "stock": 0,
         "discountImg": "",
         "discountPrice": "",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875706674.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 41645
+        "precio": 41645,
+        "masComprado": 18
       },
       {
         "id": 10,
@@ -109,7 +118,8 @@
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797467-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 65025
+        "precio": 65025,
+        "masComprado": 3
       },
       {
         "id": 11,
@@ -117,10 +127,11 @@
         "desc": "Anthelios Spray Invisible Ultra Protección F50 X200ml",
         "stock": 2,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": 69.480,
+        "discountPrice": 69.48,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875696838.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 45162
+        "precio": 45162,
+        "masComprado": 13
       },
       {
         "id": 12,
@@ -128,32 +139,35 @@
         "desc": "Anthelios Uv Mune400 Color Fluid F50 x 50ml",
         "stock": 3,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": 54.600,
+        "discountPrice": 54.6,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797641-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 35490
+        "precio": 35490,
+        "masComprado": 5
       },
       {
         "id": 13,
         "marca": "Anthelios",
         "desc": "Anthelios Uv Mune400 Crema Hidratante Con Color F50 x 50ml",
-        "stock": 4,
-        "discountPrice": 54.100,
+        "stock": 0,
+        "discountPrice": 54.1,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797689-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 35165
+        "precio": 35165,
+        "masComprado": 6
       },
       {
         "id": 14,
         "marca": "Anthelios",
         "desc": "Anthelios Uv Mune400 CreMA HidratANTE F50 x 50ml",
-        "stock": 5,
+        "stock": 0,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": 54.100,
+        "discountPrice": 54.1,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797719-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 35165
+        "precio": 35165,
+        "masComprado": 30
       },
       {
         "id": 15,
@@ -161,10 +175,11 @@
         "desc": "Anthelios Uv Mune400 Invisible Fluid F50 x 50ml",
         "stock": 0,
         "discountImg": "https://www.masfarmacias.com/wp-content/themes/hello-theme-child-master/images/descuentos/35.png",
-        "discountPrice": 54.600,
+        "discountPrice": 54.6,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337875797597-1.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 35490
+        "precio": 35490,
+        "masComprado": 20
       },
       {
         "id": 16,
@@ -175,10 +190,9 @@
         "discountPrice": null,
         "img": "https://www.masfarmacias.com/wp-content/uploads/3337872420153.jpg",
         "imgAlt": "Imagen Producto",
-        "precio": 61680
+        "precio": 61680,
+        "masComprado": 13
       }
     ]
-
-   
   }
 }

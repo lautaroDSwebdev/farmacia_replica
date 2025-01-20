@@ -8,10 +8,13 @@ export interface ProductDetails {
   img: string
   imgAlt: string
   precio: number
+  masComprado: number
 }
 export interface TypesFilter{
   marca: string ;
   minPrice: number;
+  masComprado: number;
+  inStock: number;
 }
 
 export interface TypesSelectMarca{

@@ -41,7 +41,7 @@ const router = createBrowserRouter([
             path: "/productos/Dermocosmetica",
             element: (
               <Suspense
-                fallback={  <div className="text-[3rem] flex justify-center"> Carcando productos </div>  }
+                fallback={  <div className="text-[3rem] flex justify-center mx-auto"> Carcando productos </div>  }
               >
                 <Dermocosmetica  />
               </Suspense>
