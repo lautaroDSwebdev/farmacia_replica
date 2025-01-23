@@ -1,6 +1,6 @@
 export interface SubmenuTypes {
     title: string
-    submenu: Submenu[]
+    submenu?: Submenu[] | undefined
   }
   
   export interface Submenu {

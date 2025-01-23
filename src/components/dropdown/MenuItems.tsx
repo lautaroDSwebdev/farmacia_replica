@@ -2,7 +2,7 @@ import { SubmenuTypes } from '../../types';
 import Dropdown from './Dropdown';
 import { useState, useEffect, useRef } from "react";
 
-const MenuItems = ({ items, depthLevel }: { items:SubmenuTypes , depthLevel: number }) => {
+const MenuItems = ({ items, depthLevel }: { items: SubmenuTypes , depthLevel: number }) => {
 
     const [dropdown, setDropdown] = useState(false);
 
