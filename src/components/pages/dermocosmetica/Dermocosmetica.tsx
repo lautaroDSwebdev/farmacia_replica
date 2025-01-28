@@ -6,6 +6,7 @@ import { DataComponentFilter } from "../../filter/DataFilter";
 import { Link } from "react-router-dom";
 import { ProductDetails } from "../../../types/types";
 import { addCartRedux } from "../../../store";
+import { Button } from "../../../reuse/Button";
 
 const Dermocosmetica = () => {
   const prodsDermo = data.paginas.first;
@@ -51,7 +52,7 @@ const Dermocosmetica = () => {
               )}
               {
                 e.stock > 0 ?
-                  <button
+                  <Button
                     onClick={() =>
                       dispatch(
                         addCartRedux({
@@ -64,14 +65,14 @@ const Dermocosmetica = () => {
                     }
                   >
                     agregar al carrito
-                  </button> :
+                  </Button> :
 
-                  <button
+                  <Button
                     disabled
                 
                   >
                     agregar al carrito
-                  </button>
+                  </Button>
               }
             </ul>
           );

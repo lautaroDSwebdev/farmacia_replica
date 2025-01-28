@@ -3,14 +3,15 @@ import "./Prods.css";
 import { TypesCart } from "../../../../../types/types";
 import { addCartRedux } from "../../../../../store/index";
 import { Link } from "react-router-dom";
+import { Button } from "../../../../../reuse/Button";
 
-const Prods = ({id, stock, title, img, addkart, desc,
+const Prods = ({ id, stock, title, img, addkart, desc,
   price,
   imgAlt,
 }: TypesCart) => {
 
   const dispatch = useDispatch();
-  
+
   return (
     <div key={id} className="div_prodCart dark:bg-dark-theme">
       <div className="div_imgProd ">
@@ -34,24 +35,24 @@ const Prods = ({id, stock, title, img, addkart, desc,
       </div>
       {/* Si el carrito está vacio y es menor a logitud 1 que el boton no desaparezca pero no cumpla ninguna funcion */}
       <div className=" flex justify-center m-[1rem]">
-        {stock > 1 ? (
+        {stock >= 1 && (
           <button
             onClick={() =>
               dispatch(addCartRedux({ title, img, price, id, desc }))
             }
-            className={`p-[.4rem] bg-[#F5F5F5] w-full rounded-[3rem] 
-        ${stock > 0 ? "add_to_cart" : " cursor-auto"}`}
-          >
-            {addkart}
-          </button>
-        ) : (
-          <button
-            className={`p-[.4rem] bg-[#F5F5F5] w-full rounded-[3rem] 
+            className={`g-carrusel_btn  
         ${stock > 0 ? "add_to_cart" : " cursor-auto"}`}
           >
             {addkart}
           </button>
         )}
+        { stock < 1 && (
+            <button  className={`g-carrusel_btn 
+             ${stock < 0 ? "" : " cursor-auto"}`}
+            >
+              {addkart}
+            </button>)
+        }
       </div>
     </div>
   );
