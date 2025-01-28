@@ -6,7 +6,6 @@ import { addCartRedux } from "../../../store/slice";
 import { DataComponentFilter } from "../../filter/DataFilter";
 import { ProductDetails } from "../../../types/types";
 import { Asidefilter } from "../../filter/Asidefilter";
-import { Button } from "../../../reuse/Button";
 const Maquillaje = () => {
 
   const dispatch = useDispatch()
@@ -51,7 +50,7 @@ const Maquillaje = () => {
 
               {
                 e.stock > 1 ?
-                  <Button
+                  <button
                     onClick={() =>
                       dispatch(
                         addCartRedux({
@@ -64,13 +63,13 @@ const Maquillaje = () => {
                     }
                   >
                     agregar al carrito
-                  </Button> :
-                  <Button
+                  </button> :
+                  <button
                     disabled
 
                   >
                     agregar al carrito
-                  </Button>
+                  </button>
               }
             </ul>
           );

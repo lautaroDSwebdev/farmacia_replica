@@ -3,7 +3,6 @@ import "./Prods.css";
 import { TypesCart } from "../../../../../types/types";
 import { addCartRedux } from "../../../../../store/index";
 import { Link } from "react-router-dom";
-import { Button } from "../../../../../reuse/Button";
 
 const Prods = ({ id, stock, title, img, addkart, desc,
   price,

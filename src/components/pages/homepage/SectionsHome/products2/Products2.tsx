@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import { useDispatch } from "react-redux";
 import { addCartRedux } from "../../../../../store/slice";
 import "./style.css"
-import { Button } from "../../../../../reuse/Button";
 
 
 const prods = data.store.prods2
