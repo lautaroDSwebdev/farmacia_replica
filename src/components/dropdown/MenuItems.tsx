@@ -1,8 +1,9 @@
 // import { SubmenuTypes } from '../../types';
+import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
 import { useState, useEffect, useRef } from "react";
 
-const MenuItems = ({ items, depthLevel }: { items: any , depthLevel: number }) => {
+const MenuItems = ({ items, depthLevel }: { items: any, depthLevel: number }) => {
 
     const [dropdown, setDropdown] = useState(false);
 
@@ -34,20 +35,21 @@ const MenuItems = ({ items, depthLevel }: { items: any , depthLevel: number }) =
 
     return (
         <li className="menu-items" ref={ref}
-        
+
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
         >
             {items.submenu ? (
                 <>
-                
-                    <a type="button" aria-haspopup="menu"
-                        aria-expanded={dropdown ? "true" : "false"}
-                        onClick={() => setDropdown((prev) => !prev)}
-                    >
-                        {items.title}
-                    </a>
-                    <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
+                    <Link to={items.link}>
+                        <a type="button" aria-haspopup="menu"
+                            aria-expanded={dropdown ? "true" : "false"}
+                            onClick={() => setDropdown((prev) => !prev)}
+                        >
+                            {items.title}
+                        </a>
+                        <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
+                    </Link>
                 </>
             ) : (
                 <a href="/#">{items.title}</a>

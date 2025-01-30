@@ -19,7 +19,7 @@ export const SkinCare = () => {
             <div className="p-[1rem] grid grid-cols-[repeat(auto-fill,minmax(10rem,1fr))] gap-6 mx-auto w-[77%] ">
                 {dataSkinCareFilter.map((e) => {
                     return (
-                        <ul className="prods_style dark:bg-dark-theme " key={e.id}>
+                        <ul className="prods_style dark:bg-dark-theme z-10" key={e.id}>
                             <Link to={`/producto/${e.id}`}>
                                 <img className="h-auto w-[200px]" src={e.img} alt={e.imgAlt} />
                             </Link>

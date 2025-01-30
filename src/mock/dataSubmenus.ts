@@ -4,6 +4,7 @@ export const submenus = [
         submenu: [
             {
                 title: "Dermocosmetica",
+                link: "/productos/Dermocosmetica",
                 submenu: [
                     {
                         title: "Cuidado Corporal",
@@ -60,6 +61,7 @@ export const submenus = [
             },
             {
                 title: "Cuidado de piel",
+                link: "/productos/Cuidado de piel",
                 submenu: [
                     {
                         title: "Cuidado Corporal",
