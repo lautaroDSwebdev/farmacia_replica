@@ -99,6 +99,10 @@ export const submenus = [
                 ]
             },
             {
+                title: "Maquillaje",
+                link: "/productos/Maquillaje",
+            },
+            {
                 title: "Cuidado del bebe y la mama",
                 submenu: [
                     {
@@ -164,9 +168,7 @@ export const submenus = [
             {
                 title: "Perfumes y fragancias",
             },
-            {
-                title: "Maquillaje",
-            },
+            
             {
                 title: "Cuidado de salud",
             },
