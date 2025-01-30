@@ -48,8 +48,8 @@ const MenuItems = ({ items, depthLevel }: { items: any, depthLevel: number }) =>
                         >
                             {items.title}
                         </a>
-                    </Link>
                     <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
+                    </Link>
                 </>
             ) : (
                 <a href="/#">{items.title}</a>

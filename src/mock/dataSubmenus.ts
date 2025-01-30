@@ -101,6 +101,9 @@ export const submenus = [
             {
                 title: "Maquillaje",
                 link: "/productos/Maquillaje",
+                submenu: [
+                    
+                ]
             },
             {
                 title: "Cuidado del bebe y la mama",
