@@ -49,7 +49,7 @@ const Filter = () => {
       <div className="  w-full  mx-auto h-[10vh] pb-4 max-w-maximo-ancho  ">
         <ul className="flex flex-col justify-center  h-[10vh] max-w-maximo-ancho">
           <form
-            className=" flex justify-between content-center mx-auto max-w-maximo-ancho w-full  "
+            className="flex flex-col  md:flex-row items-center  justify-between content-center mx-auto max-w-maximo-ancho w-full  "
             method="post"
             action="/send/"
           >

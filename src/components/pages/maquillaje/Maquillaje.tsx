@@ -12,7 +12,7 @@ const Maquillaje = () => {
 
   const prodsFilter: ProductDetails[] = DataComponentFilter().filterProducts(prod);
   return (
-    <section className="flex dark:bg-dark-theme">
+    <section className="flex flex-col  md:flex-row md:items-start items-center dark:bg-dark-theme">
       <Asidefilter />
       <div className="p-[1rem] grid grid-cols-[repeat(auto-fill,minmax(10rem,1fr))] gap-6 mx-auto w-[77%] ">
         {prodsFilter.map((e) => {
