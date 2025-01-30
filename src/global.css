@@ -49,10 +49,8 @@ body {
   background: #e6e5e5;
   transition: all .1s ease-in-out;
   transform: translateY(1rem);
-  z-index: 999;
+  z-index: 100;
 }
-
-
 .g-options-navtop-dropdown-of{
   position: fixed;
   inset: 88px 0rem 688px 0rem;
@@ -62,6 +60,24 @@ body {
   z-index: 0;
   opacity: 0;
   overflow: hidden;
+}
+
+.g-article-redcards{
+  div{
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: auto;
+      flex-flow: column;
+      @media screen and (width> 768px) {
+        flex-flow: row;
+      }
+    img{
+      height: auto;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (width > 780px) {
@@ -128,7 +144,11 @@ body {
 .padding-nav-op {
   height: 3rem;
 }
-
+.nav-link-a{
+  a{
+    z-index: 500;
+  }
+}
 
 .style_prods_noStock {
   background: #cd4848;

@@ -29,7 +29,7 @@ const Nav = () => {
       </div>
 
       {nav_options.map((item) => (
-        <ul className="g-responsive-options" key={item.id}>
+        <ul className="g-responsive-options nav-link-a" key={item.id}>
           <NavLink
             to={item.url}
             className={({ isActive, isPending }) =>
