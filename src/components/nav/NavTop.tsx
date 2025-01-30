@@ -66,7 +66,7 @@ export const NavTop = () => {
         </div>
       </nav>
       <div></div>
-      <div className={`flex justify-center items-center gap-4 ${first ? "g-options-navtop-dropdown" : "g-options-navtop-dropdown-of"} `}>
+      <div className={` min-h-[9vh] max-h-[9vh] flex justify-center items-center gap-4 ${first ? "g-options-navtop-dropdown" : "g-options-navtop-dropdown-of"} `}>
         <DarkLight />
         <Login />
       </div>
