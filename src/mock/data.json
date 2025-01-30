@@ -1,7 +1,7 @@
 {
     "entireHome":{
         "navtitle": "¡Usted está comprando en Mas Farmacia !",
-        "logoPagina": "./logo.png",
+        "logoPagina": "./logoOR.png",
         "home_redCardsTop": [
             "./make-up.png",
             "./Perfumes.png"
@@ -26,12 +26,8 @@
                 "id": 3,
                 "title": "Cuidado de Piel",
                 "url": "/productos/Cuidado de Piel"
-            },
-            {
-                "id": 4,
-                "title": "Perfumerias y fragancias",
-                "url": "/productos/Perfumerias y fragancias"
             }
+           
         ],
         "CarruselBannerImagenes":[
             {
@@ -98,23 +94,23 @@
             },
             {
                 "id": 2,
-                "descuento": "80% en 2da"
+                "descuento": "80% OFF"
             },
             {
                 "id": 3,
-                "descuento": "70% en 2da"
+                "descuento": "70% OFF"
             },
             {
                 "id": 4,
-                "descuento": "40% off"
+                "descuento": "40% OFF"
             },
             {
                 "id": 5,
-                "descuento": "35% off"
+                "descuento": "35% OFF"
             },
             {
                 "id": 6,
-                "descuento": "50% en 2da"
+                "descuento": "50% OFF"
             }
         ],
         "CarruselProd2": [

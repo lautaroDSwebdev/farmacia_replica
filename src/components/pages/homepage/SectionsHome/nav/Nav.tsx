@@ -3,7 +3,8 @@ import data from "../../../../../mock/data.json";
 import "./style.css";
 import { submenus } from "../../../../../mock/dataSubmenus";
 import MenuItems from "../../../../dropdown/MenuItems";
-const nav = data.entireHome.nav_options;
+import { GiHamburgerMenu } from "react-icons/gi";
+const { nav_options }  = data.entireHome;
 
 const Nav = () => {
   const depthLevel = 0;
@@ -13,7 +14,8 @@ const Nav = () => {
         <div className="inline-flex flex-wrap content-center height-cath">
           <img src="/frame botom hamburguesa.svg" alt="" />
           <b className=" text-red-500 text-decoration  dark:text-white">
-            <nav className="main-nav">
+            <nav className="main-nav flex items-center gap-2">
+              <GiHamburgerMenu></GiHamburgerMenu>
               <ul className="menus">
                 {submenus.map((menu, index) => {
                   return (
@@ -26,16 +28,16 @@ const Nav = () => {
         </div>
       </div>
 
-      {nav.map((item) => (
-        <ul className="" key={item.id}>
+      {nav_options.map((item) => (
+        <ul className="g-responsive-options" key={item.id}>
           <NavLink
             to={item.url}
             className={({ isActive, isPending }) =>
               isPending
                 ? "text-blue-500"
                 : isActive
-                  ? "text-red-500 dark:text-white"
-                  : "text-black"
+                  ? "text-red-500 "
+                  : ""
             }
           >
             {item.title}

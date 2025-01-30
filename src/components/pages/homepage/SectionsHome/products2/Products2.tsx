@@ -5,18 +5,11 @@ import Slider from "react-slick";
 import { useDispatch } from "react-redux";
 import { addCartRedux } from "../../../../../store/slice";
 import "./style.css"
+import { settings as SettingsCarrusel } from "../../../../../mock/SettingsCarrusel";
 
 
 const prods = data.store.prods2
 const Products2 = () => {
-    const settingsbrands = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1
-    };
-
     const dispatch = useDispatch()
 
     return (
@@ -26,11 +19,8 @@ const Products2 = () => {
                     <b className=" text-[#F75A3C] text-[2rem] dark:text-white">Mas Vendidos</b>
                     <button className="read_more dark:bg-dark_theme_details">Ver mas +</button>
                 </div>
-
-                <ul className="max-w-maximo-ancho mx-auto ">
-
-                    <Slider {...settingsbrands} >
-
+                <ul className="max-w-maximo-ancho mx-auto g-padding-carrusel">
+                    <Slider {...SettingsCarrusel} >
                         {
                             prods.map((e) => {
                                 return (

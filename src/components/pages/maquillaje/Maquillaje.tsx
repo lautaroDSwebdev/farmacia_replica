@@ -11,7 +11,6 @@ const Maquillaje = () => {
   const dispatch = useDispatch()
 
   const prodsFilter: ProductDetails[] = DataComponentFilter().filterProducts(prod);
-  // console.log(prodsFilter)
   return (
     <section className="flex dark:bg-dark-theme">
       <Asidefilter />

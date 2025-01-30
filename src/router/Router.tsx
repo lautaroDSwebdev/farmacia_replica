@@ -5,6 +5,7 @@ import HomePage from "../components/pages/homepage/HomePage";
 import SelectedImgProd from "../components/pages/ProdSelected/SelectedImgProd";
 import Maquillaje from "../components/pages/maquillaje/Maquillaje";
 import Login from "../components/pages/LoginGoogle/Login";
+import { SkinCare } from "../components/pages/cuidadopiel/SkinCare";
 
 
 const App = lazy(() => import("../App"));
@@ -53,12 +54,9 @@ const router = createBrowserRouter([
           },
           {
             path: "/productos/Cuidado de Piel",
-            element: "Cuidado de piel",
+            element: <SkinCare></SkinCare>,
           },
-          {
-            path: "/productos/Perfumerias y Fragancias",
-            element: "Perfumerias y fragancias",
-          },
+         
           {
             path: "/productos/Superofertas",
             element: "Superofertas",

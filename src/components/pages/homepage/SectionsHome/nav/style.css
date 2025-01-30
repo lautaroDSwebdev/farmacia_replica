@@ -11,8 +11,6 @@
 .ul-ofertas {
   display: flex;
   padding: 0 1rem;
-  /* border: 1.5px solid red; */
-  /* border-radius: 1rem; */
   b {
     cursor: pointer;
     color: red;
@@ -21,9 +19,5 @@
     align-items: center;
   }
 }
-/* .links_style{
-  a{
-    display: flexbox;
-    align-items: center;
-  }
-} */
+
+
