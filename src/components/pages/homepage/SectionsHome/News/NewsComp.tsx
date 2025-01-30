@@ -14,7 +14,7 @@ const NewsComp = () => {
             </div>
         </article>
 
-        <section className=" grid grid-cols-4 gap-14 max-w-maximo-ancho mx-auto mb-[15vh] ">
+        <section className=" grid grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] justify-center gap-14 max-w-maximo-ancho mx-auto mb-[15vh] ">
             {
                 news.map((e) => {
                     return (
