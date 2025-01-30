@@ -6,8 +6,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 1px;
-  right: 16px;
+  inset: 50% ;
   width: 13rem;
   min-height: max-content;
   height: fit-content;
