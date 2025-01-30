@@ -61,7 +61,7 @@ export const submenus = [
             },
             {
                 title: "Cuidado de piel",
-                link: "/productos/Cuidado de piel",
+                link: "/productos/Cuidado-de-Piel",
                 submenu: [
                     {
                         title: "Cuidado Corporal",

@@ -53,7 +53,7 @@ const router = createBrowserRouter([
             element: <Maquillaje/>,
           },
           {
-            path: "/productos/Cuidado de Piel",
+            path: "/productos/Cuidado-de-Piel",
             element: <SkinCare></SkinCare>,
           },
          

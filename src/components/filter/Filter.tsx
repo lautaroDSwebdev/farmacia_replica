@@ -43,7 +43,8 @@ const Filter = () => {
     //   valor: "Anthelios",
     // },
   ];
-
+  const { pathname} = location
+  console.log(pathname)
   return (
     <section className="bg-[#F9F9F9] dark:bg-dark-theme ">
       <div className="  w-full  mx-auto h-[10vh] pb-4 max-w-maximo-ancho  ">
@@ -54,7 +55,7 @@ const Filter = () => {
             action="/send/"
           >
             <p className="flex items-center opacity-70">
-              inicio/Dermocosmetica
+              
             </p>
 
             <div className="">
