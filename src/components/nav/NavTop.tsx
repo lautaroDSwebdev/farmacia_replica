@@ -47,8 +47,8 @@ export const NavTop = () => {
             !user ?
               <button onClick={NavLogin} className="cursor-pointer text-[12px] hover:text-red-600 font-semibold dark:text-[#d5d4d4] g-responsive-options">Ingresar | Registrarme</button>
               :
-              <button className="hover:bg-slate-300 g-responsive-options gap-3 p-2 rounded-md g-responsive-options" onClick={NavLogin}>
-                <p>{user?.displayName}</p>
+              <button className="hover:bg-slate-300  gap-3 p-2 rounded-md " onClick={NavLogin}>
+                <p className="g-responsive-options">{user?.displayName}</p>
                 <img className="g-img-google-nav" src={user?.photoURL as string} alt="Imagen Google" />
               </button>
           }
