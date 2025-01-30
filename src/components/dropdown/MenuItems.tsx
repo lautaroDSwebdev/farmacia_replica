@@ -41,13 +41,13 @@ const MenuItems = ({ items, depthLevel }: { items: any, depthLevel: number }) =>
         >
             {items.submenu ? (
                 <>
+                    <a type="button" aria-haspopup="menu"
+                        aria-expanded={dropdown ? "true" : "false"}
+                        onClick={() => setDropdown((prev) => !prev)}
+                    >
+                        {items.title}
+                    </a>
                     <Link to={items.link}>
-                        <a type="button" aria-haspopup="menu"
-                            aria-expanded={dropdown ? "true" : "false"}
-                            onClick={() => setDropdown((prev) => !prev)}
-                        >
-                            {items.title}
-                        </a>
                         <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
                     </Link>
                 </>
