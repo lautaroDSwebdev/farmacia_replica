@@ -2,10 +2,10 @@
 import data from '../../../../../mock/data.json'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
-
-const banners = data.entireHome.CarruselBannerImagenes
+import "./style.css"
+const { BannerImgDesk , BannerImgMob}  = data.entireHome
 // const carruselMarcas = data.entireHome.CarruselMarcas
 
 const CarruselComponent = () => {
@@ -15,44 +15,29 @@ const CarruselComponent = () => {
 
     const Autoplay = () => { 
         // si el contador es menor a el ultimo indice del array
-        if(count < banners.length -1){
+        if(count < BannerImgDesk.length -1){
+          setCount(count +1)
+          }else{
+            setCount(0)
+          }
+        if(count < BannerImgMob.length -1){
           setCount(count +1)
           }else{
             setCount(0)
           }
         }
     
-        useEffect(()=> {
-            value = setTimeout(Autoplay, 5000)
-        },[count])
+        // useEffect(()=> {
+        //     value = setTimeout(Autoplay, 5000)
+        // },[count])
 
-      // const settingsbrands = {
-      //   dots: true,
-      //   infinite: true,
-      //   speed: 500,
-      //   slidesToShow: 4,
-      //   slidesToScroll: 1
-      // };
+   
   return (
     <div>
-
-            <Link  to={banners[count].link}>
-                <div key={banners[count].id} className='pt-[3rem]  '>
-                    <img className="aspect-ratio"  src={banners[count].img} alt={banners[count].alt} />
-                </div>
+            <Link  to={BannerImgDesk[count].link}>
+                <div className='image-bg hidden md:block'  key={BannerImgDesk[count].id} style={{backgroundImage: `url(${BannerImgDesk[count].img})`}}>  </div>
+                <div className='image-mob block md:hidden'  key={BannerImgMob[count].id} style={{backgroundImage: `url(${BannerImgMob[count].imgMobile})`}}>  </div>
             </Link>
-
-            {/* <Slider {...settingsbrands} >
-                {
-                    carruselMarcas.map((brand) => (
-                        <div  key={brand.id} className='pt-[3rem] max-w-maximo-ancho mx-auto'>
-                            <img className="max-h-[30px]" src={brand.img} alt={brand.url} />
-                        </div>
-                    ))
-                }
-            </Slider> */}
-            
-
         </div>
   )
 }

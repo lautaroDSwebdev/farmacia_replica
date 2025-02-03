@@ -6,7 +6,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { styled } from "@mui/material/styles";
 import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProductsCart/ShowSelectedProd";
 import { Rootstate } from "../../store";
- const CartIcon = () => {
+const CartIcon = () => {
   const [view_cart, setEstado] = useState(true);
 
   const first = () => {
@@ -26,10 +26,17 @@ import { Rootstate } from "../../store";
     <ul className=" ">
       <IconButton onClick={first} aria-label="cart">
         <StyledBadge badgeContent={selectorRedux.length} color="secondary">
+
           <ShoppingCartIcon />
+
         </StyledBadge>
       </IconButton>
-      {!view_cart && <ShowSelectedProd selectorRedux={selectorRedux} />}
+      {!view_cart &&
+        <ShowSelectedProd
+          view_cart={view_cart}
+          setEstado={setEstado}
+          selectorRedux={selectorRedux} />
+      }
     </ul>
   );
 };

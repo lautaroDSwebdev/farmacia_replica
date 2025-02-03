@@ -25,34 +25,33 @@ const MenuItems = ({ items, depthLevel }: { items: any, depthLevel: number }) =>
     }, [dropdown]);
 
 
-    const onMouseEnter = () => {
-        setDropdown(true);
-    };
-    const onMouseLeave = () => {
-        setDropdown(false);
-    };
+    // const onMouseEnter = () => {
+    //     setDropdown(true);
+    // };
+    // const onMouseLeave = () => {
+    //     setDropdown(false);
+    // };
 
 
     return (
         <li className="menu-items" ref={ref}
 
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            // onMouseEnter={onMouseEnter}
+            // onMouseLeave={onMouseLeave}
         >
             {items.submenu ? (
                 <>
-                    <Link to={items.link}>
-                        <a type="button" aria-haspopup="menu"
+                    
+                        <Link to={items.link} className='g-red' type="button" aria-haspopup="menu"
                             aria-expanded={dropdown ? "true" : "false"}
                             onClick={() => setDropdown((prev) => !prev)}
                         >
                             {items.title}
-                        </a>
+                        </Link>
                     <Dropdown submenus={items.submenu} dropdown={dropdown} depthLevel={depthLevel} />
-                    </Link>
                 </>
             ) : (
-                <a href="/#">{items.title}</a>
+                <a href={items.link}>{items.title}</a>
             )}
         </li>
     );

@@ -24,7 +24,7 @@ export const NavTop = () => {
   return (
     <ul className="borde_nav p-1 dark:bg-dark-theme ">
       <div className=" w-full mx-auto  max-w-maximo-ancho pos-sticky  " />
-      <nav className=" grid md:grid-cols-3 grid-cols-2  max-w-maximo-ancho mx-auto z-[999] relative  ">
+      <nav className=" flex justify-evenly  max-w-maximo-ancho mx-auto z-[999] relative  ">
         <div className=" flex flex-wrap content-center justify-center">
           <Link to="/" className="cursor-pointer ">
             <img
@@ -36,7 +36,7 @@ export const NavTop = () => {
         </div>
         <div className=" h-14 g-responsive-options flex-wrap content-center justify-center relative">
           <input
-            className=" border border-slate-600 dark:placeholder:text-white dark:text-white p-2 rounded-md border-solid focus:outline-none dark:bg-dark_placeholderYborder"
+            className=" border border-slate-600  dark:text-darkplaceholdertext p-2 rounded-md border-solid focus:outline-none dark:bg-dark_placeholderYborder"
             type="search "
             placeholder="Buscar.."
           />

@@ -159,22 +159,22 @@ export const submenus = [
                     },
                 ]
             },
-            {
-                title: "Cuidado personal",
-            },
-            {
-                title: "Cuidado de cabello",
-            },
-            {
-                title: "Cuidado oral",
-            },
-            {
-                title: "Perfumes y fragancias",
-            },
+            // {
+            //     title: "Cuidado personal",
+            // },
+            // {
+            //     title: "Cuidado de cabello",
+            // },
+            // {
+            //     title: "Cuidado oral",
+            // },
+            // {
+            //     title: "Perfumes y fragancias",
+            // },
             
-            {
-                title: "Cuidado de salud",
-            },
+            // {
+            //     title: "Cuidado de salud",
+            // },
         ]
     },
 

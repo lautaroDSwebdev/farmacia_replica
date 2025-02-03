@@ -1,0 +1,17 @@
+.p_date{
+    color: #353535;
+    padding: 1rem 2rem ;
+}
+.p_title{
+    color: #adadad;
+    font-weight: 900;
+    max-width: 155px;
+}
+.div_readmore{
+    padding: 2rem;
+    .p_readmore{
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

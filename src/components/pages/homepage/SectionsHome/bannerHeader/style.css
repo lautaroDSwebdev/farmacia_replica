@@ -1,0 +1,11 @@
+.image-bg{
+    height: 36vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-mob{
+    height: 61vh;
+    background-position: center;
+    background-size: cover;
+}

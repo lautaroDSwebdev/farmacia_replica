@@ -20,14 +20,15 @@ export default {
       height:{
         "mini-icons-height":"3rem",
       },
-      backgroundColor: {
-        "dark-theme": "#5e5d5c",
-        "dark_theme_details": "#BA4747",
-        "dark_placeholderYborder": "#BDBDBD"
+      borderColor: {
+        "dark_placeholderYborder": "#f7f7f7",
       },
-      color: {
-        "textdarktheme": "#fff"
-      }
+      backgroundColor: {
+        "dark-theme": "#bdbcbc",
+        "dark-productstheme": "#a7a6a6",
+        "dark_theme_details": "#ef4444",
+      },
+     
     },
   },
   plugins: [],

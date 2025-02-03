@@ -29,17 +29,19 @@
             }
            
         ],
-        "CarruselBannerImagenes":[
+        "BannerImgDesk":[
             {
                 "id": 1,
                 "link": "#",
                 "img": "./back-image.jpg",
+                "imgMobile": "./Eucerin-bg.png",
                 "alt": "imagen1"
             },
             {
                 "id": 2,
                 "link": "#",
                 "img": "./back-image2.jpg",
+                "imgMobile": "./LRP-bg.png",
                 "alt": "imagen2"
             },
             {
@@ -54,6 +56,21 @@
                 "img": "./back-image4.jpg",
                 "alt": "imagen4"
             }
+        ],
+        "BannerImgMob":[
+            {
+                "id": 5,
+                "link": "#",
+                "imgMobile": "./Eucerin-bg.png",
+                "alt": "imagen1"
+            },
+            {
+                "id": 6,
+                "link": "#",
+                "imgMobile": "./LRP-bg.png",
+                "alt": "imagen2"
+            }
+
         ],
         "CarruselMarcas":[
             {
@@ -228,21 +245,21 @@
             {
                 "id": 2,
                 "img": "./cara2.jpg",
-                "title": "¿Que es la BB cream?",
+                "title": "Aprendé a usar el agua micelar bifásica",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
             },
             {
                 "id": 3,
                 "img": "./cara3.jpg",
-                "title": "¿Que es la BB cream?",
+                "title": "Ácido hialurónico función",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
             },
             {
                 "id": 4,
                 "img": "./cara4.jpg",
-                "title": "¿Que es la BB cream?",
+                "title": "Trucos para combatir la piel grasa",
                 "read_more": "Leer mas +",
                 "date": "mayo 27, 2022"
             }

@@ -1,4 +1,4 @@
-import data from "../../../../../storeData.json"
+import data from "../../../../../mock/storeData.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addCartRedux } from "../../../../../store/slice";
 import "./style.css"
 import { settings as SettingsCarrusel } from "../../../../../mock/SettingsCarrusel";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const prods = data.store.prods2
@@ -15,33 +16,33 @@ const Products2 = () => {
     return (
         <div>
             <article className="w-full">
-                <div className="max-w-maximo-ancho mx-auto mt-[3rem] mb-[1rem] flex justify-between ">
-                    <b className=" text-[#F75A3C] text-[2rem] dark:text-white">Mas Vendidos</b>
-                    <button className="read_more dark:bg-dark_theme_details">Ver mas +</button>
+                <div className="max-w-maximo-ancho mx-auto mt-[3rem] mb-[1rem] flex md:flex-row flex-col p-3  items-center md:justify-between justify-center ">
+                    <p className=" text-[#F75A3C] g-sideleft-titles dark:text-white flex justify-center md:justify-start">Mas Vendidos</p>
+                    <button className="read_more dark:bg-dark_theme_details g-button_seemore">Ver mas +</button>
                 </div>
                 <ul className="max-w-maximo-ancho mx-auto g-padding-carrusel">
                     <Slider {...SettingsCarrusel} >
                         {
                             prods.map((e) => {
                                 return (
-                                    <div key={e.id} className="dark:bg-dark-theme prod_styles">
-                                        <div className="div_child_styles">
+                                    <div key={e.id} className="dark:bg-dark-productstheme prod_styles">
+                                        <div className="g-div_imgProd">
                                             <img className="" src={e.img} />
                                         </div>
                                         <div className="mx-3 p-3 h-auto">
                                             <ul className="flex gap-4">
-                                                <p className={`px-2 py-1 inline-flex rounded-[3rem] text-sm bg-[#F5F5F5] cursor-pointer 
+                                                <p className={`g-p-stock 
                                                     ${e.stock > 0 ?
                                                         "style_prods_Stock" : "style_prods_noStock"}`}
                                                 >
-                                                    {e.stock === 0 ? "Agotado" : "En stock"}
+                                                    {e.stock === 0 ? "Agotado" : "Existe"}
                                                 </p>
-                                                <p className="px-2 py-1 inline-flex rounded-[3rem] text-sm bg-[#F5F5F5] cursor-pointer">{e.title}</p>
+                                                <p className="g-brand ">{e.title}</p>
                                             </ul>
-                                            <p className="p-1">{e.description}</p>
+                                            <p className="g-desc dark:text-white">{e.description}</p>
                                         </div>
                                         <div className=" inline-flex ">
-                                            <b className="pl-4">{e.price}</b>
+                                            <b className="g-price">${e.price}</b>
                                         </div>
 
                                         <div className=" flex justify-center m-[1rem]">
@@ -58,6 +59,7 @@ const Products2 = () => {
                                                         }))}
                                                     className={`g-carrusel_btn   ${e.stock > 0 ? "add_to_cart" : " cursor-auto"}`}>
                                                     {e.add_kart}
+                                                    <FaShoppingCart />
                                                 </button>
                                             }
                                             {
@@ -65,6 +67,7 @@ const Products2 = () => {
                                                 <button disabled
                                                     className={`g-carrusel_btn   ${e.stock > 0 ? "add_to_cart" : " cursor-auto"}`}>
                                                     {e.add_kart}
+                                                    <FaShoppingCart />
                                                 </button>
                                             }
                                         </div>

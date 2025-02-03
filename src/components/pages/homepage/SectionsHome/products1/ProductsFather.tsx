@@ -1,4 +1,4 @@
-import data from "../../../../../storeData.json"
+import data from "../../../../../mock/storeData.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -7,13 +7,15 @@ import { settings as SettingsCarrusel } from "../../../../../mock/SettingsCarrus
 
 
 const prods = data.store.prods1
-const Products = () => {
+const ProductsFather = () => {
     return (
         <div>
             <article className="w-full">
-                <div className="max-w-maximo-ancho mx-auto mt-[3rem] mb-[1rem] flex justify-between ">
-                    <b className="  text-[#F75A3C] text-[2rem] dark:text-white">Productos Destacados</b>
-                    <button className="read_more dark:bg-dark_theme_details enlace-header ">Ver mas +</button>
+                <div className="max-w-maximo-ancho mx-auto mt-[3rem] mb-[1rem] 
+                flex md:flex-row flex-col p-3  md:justify-between justify-center items-center">
+                    <p className="  text-[#F75A3C] g-sideleft-titles  dark:text-white">Productos Destacados</p>
+                    <button className="read_more dark:bg-dark_theme_details enlace-header
+                        g-button_seemore flex justify-center md:justify-start">Ver mas +</button>
                 </div>
                 <ul className="max-w-[1200px] mx-auto g-padding-carrusel">
                     <Slider {...SettingsCarrusel}  >
@@ -41,4 +43,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default ProductsFather

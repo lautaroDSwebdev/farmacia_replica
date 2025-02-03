@@ -20,14 +20,142 @@ html {
 body {
   overflow-x: hidden;
 }
-.g-carrusel_btn{
-
-  padding: .4rem;
-  background: #F5F5F5;
+.g-red {
+  color: #ef4444;
+}
+.g-button_seemore {
+  max-width: 90px;
+}
+.g-sideleft-titles {
+  font-size: 1rem;
+  padding: 5px;
+  @media screen and (width> 768px) {
+    font-size: 1.5rem;
+  }
+}
+.g-dark-textwhite {
+  color: #fff;
+}
+.g-carrusel_btn {
+  padding: 0.4rem;
+  background: #f5f5f5;
   width: 100%;
   border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
 }
-.g-padding-carrusel{
+.g-sectionproducts-pages {
+  background: #dddcdc;
+}
+/* Styles views products /dermocosmetic- makeup - skincare /*/
+.g-products-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 0.125rem;
+  transition: ease-in-out all 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  box-shadow: 0px 4px 7px -3px rgba(0, 0, 0, 0.44);
+
+  &:hover {
+    box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.44);
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: ease-in-out all 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    box-shadow: 0px 4px 4px -3px rgba(0, 0, 0, 0.44);
+    background: #ffffff;
+    &:hover {
+      background: #f1f0f0;
+    }
+  }
+  .green {
+    color: #22fd0e;
+    font-weight: 400;
+  }
+  button:disabled {
+    &:hover {
+      background: none;
+      color: black;
+    }
+    cursor: not-allowed;
+  }
+  .ul_marca_stock {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    aspect-ratio: 1/1;
+    
+  }
+}
+.g-brand {
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  border-radius: 3rem;
+  font-size: 0.875rem;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  color: #242323;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.g-p-stock {
+  cursor: pointer;
+  padding: 1px 12px;
+  border-radius: 3rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.g-div_imgProd {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  img {
+    position: relative;
+    height: 11rem;
+    width: 14rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.5s ease-out;
+    z-index: 300;
+    &:hover {
+      transition: all 0.5s ease-out;
+      rotate: 2deg;
+      opacity: 1;
+      scale: 1.2;
+    }
+  }
+}
+
+.g-desc {
+  color: #777676;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.g-price {
+  padding: 0 0 0 23px;
+  font-weight: bold;
+  color: #474545;
+}
+.g-padding-carrusel {
   padding: 0 2rem;
 }
 .g-img-google-nav {
@@ -41,39 +169,39 @@ body {
   border-radius: 10rem;
 }
 
-.g-responsive-options{
+.g-responsive-options {
   display: none !important;
 }
-.g-options-navtop-dropdown{
+.g-options-navtop-dropdown {
   position: fixed;
   inset: 5rem 0rem 42rem 0rem;
   background: #e6e5e5;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   transform: translateY(1rem);
   z-index: 200;
 }
-.g-options-navtop-dropdown-of{
+.g-options-navtop-dropdown-of {
   position: fixed;
   inset: 88px 0rem 688px 0rem;
   background: #8a7f7f;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   transform: translateY(-4rem);
   z-index: 0;
   opacity: 0;
   overflow: hidden;
 }
 
-.g-article-redcards{
-  div{
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin: auto;
-      flex-flow: column;
-      @media screen and (width> 768px) {
-        flex-flow: row;
-      }
-    img{
+.g-article-redcards {
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: auto;
+    flex-flow: column;
+    @media screen and (width> 768px) {
+      flex-flow: row;
+    }
+    img {
       height: auto;
       cursor: pointer;
       width: 100%;
@@ -82,10 +210,10 @@ body {
 }
 
 @media screen and (width > 780px) {
-  .g-responsive-options{
+  .g-responsive-options {
     display: flex !important;
   }
-  .g-options-navtop-dropdown{
+  .g-options-navtop-dropdown {
     display: none;
   }
 }
@@ -145,11 +273,6 @@ body {
 .padding-nav-op {
   height: 3rem;
 }
-/* .nav-link-a{
-  a{
-    z-index: 500;
-  }
-} */
 
 .style_prods_noStock {
   background: #cd4848;
@@ -196,7 +319,6 @@ body {
   position: relative;
   font-size: 16px;
   a {
-    color: #e61515;
     transition: all 0.1s ease-in-out;
     &:hover {
       text-decoration: underline;
@@ -226,9 +348,8 @@ body {
   min-width: 10rem;
   padding: 0.5rem 0;
   list-style: none;
-  background-color: #fff;
-  z-index: 100;
-  /* border-radius: 0.5rem; */
+  /* background-color: #fff; */
+  z-index: 800;
   display: none;
 }
 .main-nav .dropdown.show {
@@ -236,6 +357,8 @@ body {
   flex-flow: column;
   gap: 10px;
   padding: 8px;
+  z-index: 800;
+  opacity: 1;
 }
 .main-nav .dropdown .dropdown-submenu {
   position: absolute;
@@ -255,7 +378,7 @@ body {
 .main-nav button span {
   margin-left: 5px;
 }
-.btn-shoppingCart{
+.btn-shoppingCart {
   cursor: pointer;
   padding: 5px;
   /* border-radius: 3px; */
@@ -271,6 +394,5 @@ body {
       background: none;
       color: black;
     }
+  }
 }
-}
-

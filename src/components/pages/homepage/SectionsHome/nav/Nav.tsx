@@ -13,7 +13,7 @@ const Nav = () => {
       <div className=" ul-cath">
         <div className="inline-flex flex-wrap content-center height-cath">
           <img src="/frame botom hamburguesa.svg" alt="" />
-          <b className=" text-red-500 text-decoration  dark:text-white">
+          <b className=" g-red text-decoration  dark:textdarktheme">
             <nav className="main-nav flex items-center gap-2">
               <GiHamburgerMenu></GiHamburgerMenu>
               <ul className="menus">
@@ -44,9 +44,9 @@ const Nav = () => {
           </NavLink>
         </ul>
       ))}
-      <div className=" ul-ofertas">
-        <b className="  dark:text-white">Ofertas</b>
-      </div>
+      {/* <div className=" ul-ofertas">
+        <b className="  g-red rounded-md border border-red-600 p-[14px]">Super Ofertas</b>
+      </div> */}
     </div>
   );
 };

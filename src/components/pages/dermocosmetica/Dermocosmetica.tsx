@@ -1,11 +1,11 @@
 import { Asidefilter } from "../../filter/Asidefilter";
 import data from "../../../mock/dermocosmetica.json";
-import "./democosmetica.css";
 import { useDispatch } from "react-redux";
 import { DataComponentFilter } from "../../filter/DataFilter";
 import { Link } from "react-router-dom";
 import { ProductDetails } from "../../../types/types";
 import { addCartRedux } from "../../../store";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Dermocosmetica = () => {
   const prodsDermo = data.paginas.first;
@@ -17,63 +17,54 @@ const Dermocosmetica = () => {
   return (
     <section className="flex flex-col  md:flex-row md:items-start items-center  dark:bg-dark-theme">
       <Asidefilter />
-      <div className="p-[1rem] grid grid-cols-[repeat(auto-fill,minmax(10rem,1fr))] gap-6 mx-auto w-[77%] ">
+      <div className="p-[1rem] grid grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-6 mx-auto w-[77%] ">
         {prodsFilter.map((e) => {
           return (
-            <ul className="prods_style dark:bg-dark-theme z-10 " key={e.id}>
-              <Link to={`/producto/${e.id}`}>
-                <img className="h-auto w-[200px]" src={e.img} alt={e.imgAlt} />
-              </Link>
-              <ul className="ul_marca_stock">
-                <p className=" dark:text-white text-[12px] flex items-center ">
-                  {e.marca}
-                </p>
-                {e.stock > 0 ? (
-                  <p className="text-[#66d151]">stock</p>
-                ) : (
-                  <p className="text-[#f5493a] dark:text-[#ffffff] ">
-                    no stock
+            <div key={e.id} className="div_prodCart dark:bg-dark-productstheme">
+              <div className="g-div_imgProd ">
+                <Link to={`/producto/${e.id}`}>
+                  <img className="" src={e.img} alt={e.imgAlt} />
+                </Link>
+              </div>
+              <div className="mx-3 p-3 h-auto">
+                <ul className="ul_p ">
+                  <p className={`g-p-stock ${e.stock > 0 ? "style_prods_Stock" : "style_prods_noStock"}`}
+                  >
+                    {e.stock === 0 ? "Agotado" : "Existe"}
                   </p>
-                )}
-              </ul>
-              <p className="text-[12px]">{e.desc}</p>
-              <p
-                className={`text-[15px] dark:text-white ${!e.discountPrice?.toString() ? "pb-[3rem]" : ""}`}
-              >
-                $ {e.precio}
-              </p>
-              {e.discountPrice || e.discountImg ? (
-                <p className="text-[#66d151] font-semibold text-[12px] flex items-center max-w-[100px] mx-auto ">
-                  Con descuento de: $ {e.discountPrice?.toString()}
-                </p>
-              ) : (
-                ""
-              )}
-              {
-                e.stock > 0 ?
-                  <button
-                    onClick={() =>
-                      dispatch(
-                        addCartRedux({
-                          id: e.id,
-                          img: e.img,
-                          title: e.marca,
-                          price: e.precio,
-                        })
-                      )
-                    }
-                  >
-                    agregar al carrito
-                  </button> :
+                  <p className="g-brand ">{e.marca}</p>
+                </ul>
+                <p className="g-desc dark:text-white">{e.desc}</p>
+              </div>
+              <div className=" inline-flex ">
+                <b className="g-price">${e.precio}</b>
+              </div>
 
+              <div className=" flex justify-center m-[1rem]">
+                {e.stock >= 1 && (
                   <button
-                    disabled
-                
+
+                    onClick={() =>
+                      dispatch(addCartRedux({ title: e.marca, img: e.img, price: e.precio, id: e.id, desc: e.desc }))
+                    }
+                    className={`g-carrusel_btn  
+                   ${e.stock > 0 ? "add_to_cart" : " cursor-auto"}`}
                   >
-                    agregar al carrito
+
+                    añadir al carrito
+                    <FaShoppingCart />
                   </button>
-              }
-            </ul>
+                )}
+                {e.stock < 1 && (
+                  <button className={`g-carrusel_btn 
+                       ${e.stock < 0 ? "" : " cursor-auto"}`}
+                  >
+                    añadir al carrito
+                    <FaShoppingCart />
+                  </button>)
+                }
+              </div>
+            </div>
           );
         })}
       </div>
