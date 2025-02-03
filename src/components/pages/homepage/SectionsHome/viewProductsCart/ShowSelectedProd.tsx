@@ -10,6 +10,8 @@ const ShowSelectedProd = ({ selectorRedux, view_cart, setEstado }: {
 }) => {
   selectorRedux;
 
+  const longitudBolsa = selectorRedux.length
+
 
   const dispatch = useDispatch();
   return (
@@ -38,7 +40,7 @@ const ShowSelectedProd = ({ selectorRedux, view_cart, setEstado }: {
               key={e.id}
             >
               <div className="div_prods">
-                <img  src={e.img} alt="imagen producto" />
+                <img src={e.img} alt="imagen producto" />
                 <div className="div_title_price">
                   <h3 className="g-red">{e.title}</h3>
                   <p className="" > ${e.price}</p>
@@ -54,10 +56,22 @@ const ShowSelectedProd = ({ selectorRedux, view_cart, setEstado }: {
                 </div>
 
               </div>
+
             </ul>
           ))}
         </div>
+        <div>
+          {
+            selectorRedux.map(e => {
+              return (
 
+                <p>Total: {e.price * longitudBolsa} </p>
+              )
+            })
+
+          }
+
+        </div>
         <div className="end_buy">
           <button>Finalizar compra</button>
           <button>Ver compra</button>

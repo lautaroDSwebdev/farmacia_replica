@@ -1,13 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import data from "../../mock/data.json";
-import CartIcon from "./CartIcon";
-import DarkLight from "./DarkLight";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Auth } from "../../firebase/firebase";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
 import { Login } from "./Login";
+import { CartIcon , DarkLight } from "./index";
 export const NavTop = () => {
 
   const imagenLogo = data.entireHome.logoPagina;
@@ -45,7 +44,7 @@ export const NavTop = () => {
           
           {
             !user ?
-              <button onClick={NavLogin} className="cursor-pointer text-[12px] hover:text-red-600 font-semibold dark:text-[#d5d4d4] g-responsive-options">Ingresar | Registrarme</button>
+              <button onClick={NavLogin} className="cursor-pointer text-[12px] hover:text-red-600 font-semibold text-black g-responsive-options">Ingresar | Registrarme</button>
               :
               <button className="hover:bg-slate-300  gap-3 p-2 rounded-md flex " onClick={NavLogin}>
                 <img className="g-img-google-nav" src={user?.photoURL as string} alt="Imagen Google" />
@@ -66,7 +65,7 @@ export const NavTop = () => {
         </div>
       </nav>
       <div></div>
-      <div className={` min-h-[9vh] max-h-[9vh] flex justify-center items-center gap-4 ${first ? "g-options-navtop-dropdown" : "g-options-navtop-dropdown-of"} `}>
+      <div className={` min-h-[9vh] max-h-[9vh] flex justify-center items-center gap-4 dark:bg-dark-productstheme bg-[#f5f5f5] ${first ? "g-options-navtop-dropdown" : "g-options-navtop-dropdown-of"} `}>
         <DarkLight />
         <Login />
       </div>

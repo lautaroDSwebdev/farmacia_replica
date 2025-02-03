@@ -173,22 +173,20 @@ body {
   display: none !important;
 }
 .g-options-navtop-dropdown {
-  position: fixed;
-  inset: 5rem 0rem 42rem 0rem;
-  background: #e6e5e5;
+  position: relative;
+  inset: -1rem 0rem 42rem 0rem;
   transition: all 0.1s ease-in-out;
   transform: translateY(1rem);
   z-index: 200;
 }
 .g-options-navtop-dropdown-of {
-  position: fixed;
-  inset: 88px 0rem 688px 0rem;
-  background: #8a7f7f;
+  position: relative;
+  inset: -1rem 0rem 42rem 0rem;
   transition: all 0.1s ease-in-out;
-  transform: translateY(-4rem);
-  z-index: 0;
+  transform: translateY(0);
+  z-index: 200;
   opacity: 0;
-  overflow: hidden;
+  
 }
 
 .g-article-redcards {
@@ -348,7 +346,7 @@ body {
   min-width: 10rem;
   padding: 0.5rem 0;
   list-style: none;
-  /* background-color: #fff; */
+  background-color: #fff;
   z-index: 800;
   display: none;
 }

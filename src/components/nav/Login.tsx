@@ -14,7 +14,7 @@ export const Login = () => {
         <div className='md:hidden flex'>
             {
                 !user ?
-                    <button onClick={NavLogin} className="cursor-pointer text-[12px] hover:text-red-600 font-semibold dark:text-[#d5d4d4] ">Ingresar | Registrarme</button>
+                    <button onClick={NavLogin} className="cursor-pointer text-[12px] hover:text-red-600 font-semibold text-black  ">Ingresar | Registrarme</button>
                     :
                     <button className="hover:bg-slate-300  gap-3 p-2 rounded-md flex " onClick={NavLogin}>
                         <p>{user?.displayName}</p>

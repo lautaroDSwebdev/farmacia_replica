@@ -6,7 +6,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { styled } from "@mui/material/styles";
 import ShowSelectedProd from "../pages/homepage/SectionsHome/viewProductsCart/ShowSelectedProd";
 import { Rootstate } from "../../store";
-const CartIcon = () => {
+export const CartIcon = () => {
   const [view_cart, setEstado] = useState(true);
 
   const first = () => {
@@ -41,4 +41,3 @@ const CartIcon = () => {
   );
 };
 
-export default CartIcon;

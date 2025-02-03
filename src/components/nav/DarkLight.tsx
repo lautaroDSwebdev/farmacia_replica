@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./style.css";
 import { LuSun } from "react-icons/lu";
 import { FaMoon } from "react-icons/fa6";
-const DarkLight = () => {
+export const DarkLight = () => {
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "light";
@@ -35,4 +35,4 @@ const DarkLight = () => {
   );
 };
 
-export default DarkLight;
+ 
