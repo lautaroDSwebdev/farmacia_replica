@@ -10,7 +10,6 @@ const ShowSelectedProd = ({ selectorRedux, view_cart, setEstado }: {
 }) => {
   selectorRedux;
 
-  const longitudBolsa = selectorRedux.length
 
 
   const dispatch = useDispatch();
@@ -60,18 +59,7 @@ const ShowSelectedProd = ({ selectorRedux, view_cart, setEstado }: {
             </ul>
           ))}
         </div>
-        <div>
-          {
-            selectorRedux.map(e => {
-              return (
 
-                <p>Total: {e.price * longitudBolsa} </p>
-              )
-            })
-
-          }
-
-        </div>
         <div className="end_buy">
           <button>Finalizar compra</button>
           <button>Ver compra</button>
