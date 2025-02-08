@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom";
 import data from "../../../../../mock/data.json";
 import "./style.css";
-import { submenus } from "../../../../../mock/dataSubmenus";
-import MenuItems from "../../../../dropdown/MenuItems";
-import { GiHamburgerMenu } from "react-icons/gi";
-const { nav_options }  = data.entireHome;
+import { DropdownMobile } from "../../../../dropdown/index";
+const { nav_options } = data.entireHome;
 
 const Nav = () => {
-  const depthLevel = 0;
   return (
     <div className="flex justify-evenly  max-w-[900px] mx-auto pt-[1rem] links_style">
       <div className=" ul-cath">
@@ -15,13 +12,17 @@ const Nav = () => {
           <img src="/frame botom hamburguesa.svg" alt="" />
           <b className=" g-red text-decoration  dark:textdarktheme">
             <nav className="main-nav flex items-center gap-2">
-              <GiHamburgerMenu></GiHamburgerMenu>
-              <ul className="menus">
-                {submenus.map((menu, index) => {
+              {/* <GiHamburgerMenu></GiHamburgerMenu> */}
+              <ul className="">
+                {/* {submenus.map((menu, index) => {
                   return (
-                    <MenuItems items={menu} key={index} depthLevel={depthLevel} />
+                    <MenuItemsDropdown items={menu} key={index} depthLevel={depthLevel} />
                   );
-                })}
+                })} */}
+
+
+                <DropdownMobile />
+
               </ul>
             </nav>
           </b>

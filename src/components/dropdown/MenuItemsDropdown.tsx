@@ -1,9 +1,9 @@
 // import { SubmenuTypes } from '../../types';
 import { Link } from 'react-router-dom';
-import Dropdown from './Dropdown';
 import { useState, useEffect, useRef } from "react";
+import { Dropdown } from './Dropdown';
 
-const MenuItems = ({ items, depthLevel }: { items: any, depthLevel: number }) => {
+ const MenuItemsDropdown = ({ items, depthLevel }: { items: any, depthLevel: number }) => {
 
     const [dropdown, setDropdown] = useState(false);
 
@@ -57,4 +57,4 @@ const MenuItems = ({ items, depthLevel }: { items: any, depthLevel: number }) =>
     );
 };
 
-export default MenuItems;
+export default MenuItemsDropdown

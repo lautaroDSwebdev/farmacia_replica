@@ -1,5 +1,5 @@
 import { submenus } from "../../mock/dataSubmenus";
-import MenuItems from "./MenuItems";
+import MenuItems from "./MenuItemsDropdown";
 
 const NavbarSubmenus = () => {
     const depthLevel = 0;

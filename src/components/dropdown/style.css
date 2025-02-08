@@ -1,0 +1,6 @@
+.gradientRed{
+    background: linear-gradient(358deg, #e80000 0%, #ffffff 67%);
+    
+    background-position: center;
+    background-attachment: fixed;
+}

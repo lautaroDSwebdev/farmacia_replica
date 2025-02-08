@@ -53,9 +53,7 @@ const ShowSelectedProd = ({ selectorRedux, view_cart, setEstado }: {
                     <IoCloseCircleOutline className="text-[15px] " />
                   </button>
                 </div>
-
               </div>
-
             </ul>
           ))}
         </div>

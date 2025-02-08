@@ -16,12 +16,15 @@ a {
 }
 html {
   scrollbar-width: thin;
+  overflow: visible !important;
+  padding: 0 !important;
 }
 body {
   overflow-x: hidden;
 }
 .g-red {
   color: #ef4444;
+  fill: #ef4444;
 }
 .g-button_seemore {
   max-width: 90px;
@@ -98,7 +101,6 @@ body {
   }
   img {
     aspect-ratio: 1/1;
-    
   }
 }
 .g-brand {
@@ -186,7 +188,6 @@ body {
   transform: translateY(0);
   z-index: 200;
   opacity: 0;
-  
 }
 
 .g-article-redcards {
