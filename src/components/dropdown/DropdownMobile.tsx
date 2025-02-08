@@ -1,17 +1,8 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import "./style.css"
-import { submenus } from '../../mock/dataSubmenus'
 import { Link } from 'react-router-dom'
 
-interface TypesData {
-    title: string
-    submenu: Submenus[]
-}
-interface Submenus {
-    title: string
-    link: string
 
-}
 export const DropdownMobile = () => {
 
     const submenu = [
