@@ -20,6 +20,7 @@ export const DropdownMobile = () => {
         },
         {
             title: "Cuidado del bebe y la mama",
+            link: "/productos/Cuidado-de-Piel",
         }
     ]
     return (
